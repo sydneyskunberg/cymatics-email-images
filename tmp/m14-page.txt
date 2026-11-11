@@ -1,0 +1,4270 @@
+{% comment %} W9 MELODY & MIDI PACKS optin (14 packs, 2026-10-19): built by scratchpad w9_subset_build.py from page.2026.w9.50.samplepacks. PENDING: form ids. {% endcomment %}
+{% layout 'ss.product.page' %}
+<link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
+
+{% comment %}=== Per-URL Klaviyo form mapping. The same template is reused
+   across multiple campaign URLs (Main / BR / FB / IG / SMS / Hub / Push).
+   Each URL needs its own Klaviyo list, so we assign `page_klaviyo_id`
+   ONLY for explicitly-mapped URLs. Any unmapped URL gets no assignment,
+   which we use below to suppress the form embed entirely (so a stray /
+   accidental URL never collects emails into the wrong list).
+   To add a new URL: append an {% elsif %} branch with its Klaviyo form ID. ==={% endcomment %}
+{% comment %}=== Per-URL Klaviyo form mapping (W9 Melody & MIDI Packs bundle). Only mapped URLs
+   get a page_klaviyo_id; unmapped URLs render no form. ==={% endcomment %}
+{% if request.path == "/pages/cymatics-w9-14-melody-packs" %}
+    {% assign page_klaviyo_id = "" %}   {% comment %} Web form PENDING (W9 Melody & MIDI Packs) {% endcomment %}
+{% elsif request.path == "/pages/cymatics-w9-14-melody-packs-e" %}
+    {% assign page_klaviyo_id = "UMKzxK" %}   {% comment %} Email form UMKzxK (W9 Melody & MIDI Packs) {% endcomment %}
+{% elsif request.path == "/pages/cymatics-w9-14-melody-packs-t" %}
+    {% assign page_klaviyo_id = "R5bMVC" %}   {% comment %} SMS form R5bMVC (W9 Melody & MIDI Packs) {% endcomment %}
+{% elsif request.path == "/pages/cymatics-w9-14-melody-packs-push" %}
+    {% assign page_klaviyo_id = "VF2pdt" %}   {% comment %} Push form VF2pdt (W9 Melody & MIDI Packs) {% endcomment %}
+{% elsif request.path == "/pages/cymatics-w9-14-melody-packs-ig" %}
+    {% assign page_klaviyo_id = "Wr3GkU" %}   {% comment %} IG form Wr3GkU (W9 Melody & MIDI Packs) {% endcomment %}
+{% elsif request.path == "/pages/cymatics-w9-14-melody-packs-igb" %}
+    {% assign page_klaviyo_id = "Tm9Xv2" %}   {% comment %} IGB form Tm9Xv2 (W9 Melody & MIDI Packs) {% endcomment %}
+{% elsif request.path == "/pages/cymatics-w9-14-melody-packs-a" %}
+    {% assign page_klaviyo_id = "" %}   {% comment %} Ads form PENDING (W9 Melody & MIDI Packs) {% endcomment %}
+{% elsif request.path == "/pages/cymatics-w9-14-melody-packs-a2" %}
+    {% assign page_klaviyo_id = "" %}   {% comment %} Ads 2 form PENDING (W9 Melody & MIDI Packs) {% endcomment %}
+{% elsif request.path == "/pages/cymatics-w9-14-melody-packs-yt" %}
+    {% assign page_klaviyo_id = "RfYNJ3" %}   {% comment %} YT form RfYNJ3 (W9 Melody & MIDI Packs) {% endcomment %}
+{% endif %}
+
+{% comment %}=== Noindex every URL except the main /pages/cymatics-w9-14-melody-packs. ==={% endcomment %}
+{% unless request.path == "/pages/cymatics-w9-14-melody-packs" %}
+<meta name="robots" content="noindex">
+{% endunless %}
+
+    {% assign page_city = "Charlotte" %}
+    {% assign page_city_state = "Charlotte, NC" %}
+    {% assign page_month_day = "November 25th" %}
+    {% assign page_video_url = "tibpgnmhjn" %}
+
+    {% assign page_city_box = "https://cdn.shopify.com/s/files/1/0129/7698/0032/files/Charlotte_-_exclusive_pack.webp?v=1738597622" %}
+    {% assign age = "21" %}
+    {% assign page_address = "Zona Rosa<br/> 226 Fairwood Ave<br/> Charlotte NC 28203" %}
+    {% assign page_time = "6PM - 11PM" %}
+
+    {% assign soldoutpercent = "(97% SOLD OUT)" %}
+    {% assign weekday = "Monday" %}
+
+
+<style>
+    .site-header {
+        display: none !important;
+    }
+    #shopify-section-footer {
+        display: block !important;
+    }
+
+    .dark-bg {
+        background-image: radial-gradient(500px at center,#090A0C,#090A0C);
+    }
+
+    .buy-btn {
+        float: right;
+    }
+
+    .pp-btn {
+        float: left;
+    }
+
+    .credit-apply {
+        color: #ffffff;
+        font-family: cfm-semibold, sans-serif;
+        letter-spacing: 2px;
+        margin-top: 20px;
+    }
+
+    .credit-apply img {
+        width: 100px;
+        margin-top: -20px;
+    }
+
+    .subheader-text {
+        color: #ffffff;
+    }
+
+    .subheader-text {
+        color: #ffffff;
+    }
+
+    .section-action {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .affirm-btn {
+        width: 430px !important;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        padding-top: 15px !important;
+        padding-bottom: 10px !important;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #ffffff;
+        background: linear-gradient(166deg, #ffffff 30%, #ffffff 80%);
+    }
+
+    .affirm-btn:hover {
+        text-decoration: none !important;
+    }
+
+    .affirm-btn img {
+        width: 100px;
+        margin-top: -18px;
+        margin-left: -10px;
+    }
+
+    .powered-by {
+        color: #ffffff;
+        font-family: cfm-light;
+        opacity: 0.7;
+        letter-spacing: 0.5px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .powered-by img {
+        width: 100px;
+        margin-top: -16px;
+    }
+
+    
+    .credit-btn .btn.cta-button.overview-btn {
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+    }
+
+    .no-thanks-link {
+        color: #ffffff;
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+    }
+
+    .h1-overview {
+        color: #ffffff !important;
+        font-family: 'Sora', sans-serif;
+        font-size: 42px !important;
+        line-height: 1.15 !important;
+        text-transform: none;
+        margin-bottom: 0 !important;
+    }
+
+    .accent-color {
+        font-family: cfm-semibold;
+        color: #EB3636;
+    }
+
+    .omega-txt {
+        color: #EB3636;
+    }
+
+
+    .h1-header-overview {
+        font-family: cfm-regular, sans-serif !important;
+        font-size: 24px !important;
+        letter-spacing: 0px !important;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+        opacity: 0.7;
+    }
+
+    .h1-header-overview .strikeout {
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .bundle-img {
+        width: 60%;
+        margin-top: 30px;
+        margin-bottom: 70px;
+        max-width: 800px;
+        transform: rotate(-15deg);
+    }
+
+    .bundle-main-header {
+        color: #ffffff;
+        font-family: cfm-semibold;
+        font-size: 26px;
+        letter-spacing: 1px;
+    }
+
+    .bundle-main-subheader {
+        font-family: cfm-light;
+        font-size: 24px;
+        letter-spacing: 0.5px;
+    }
+
+    .bundle-title {
+        color: #ffffff;
+        font-family: cfm-semibold;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .copy-head {
+        padding-left: 0px;
+        padding-bottom: 10px;
+        font-family: cfm-light, sans-serif !important;
+        margin-top: 10px;
+    }
+
+    .modal-lg {
+        max-width: 1080px;
+    }
+
+    .pick-bundle .btn.cta-button {
+        padding: 5px 30px 5px 30px !important;
+        font-size: 20px !important;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .bonus-txt-light {
+        font-family: cfm-semibold, sans-serif;
+        color: #fff;
+        font-size: 21px;
+        letter-spacing: 0;
+        opacity: .7;
+    }
+
+    .modal-bundle-subheader {
+        font-family: cfm-semibold;
+        font-size: 18px;
+    }
+
+    .modal .pp-description {
+        font-family: cfm-light;
+        color: #868686;
+        margin-top: -10px;
+        letter-spacing: 1px;
+    }
+
+    .bf-header {
+        margin-bottom: -40px !important;
+        margin-top: 0;
+    }
+
+    .tml-timer .cookieTimer .time {
+        display: none;
+    }
+
+    .tml-timer .cookieTimer .name {
+        font-family: cfm-semibold;
+        font-size: 18px;
+        margin-bottom: -10px;
+    }
+
+    .total-value {
+        border-top: 1px solid #ffffff;
+        margin-top: 15px;
+    }
+
+    .overview-price .offer-price {
+        color: #EB3636 !important;
+    }
+
+    .cta-button {
+        background: linear-gradient(166deg, #EB3636 30%, #EB3636 80%);
+        color: #ffffff !important;
+    }
+
+    .omega-color {
+        color: #EB3636 !important;
+    }
+
+    .affirm-btn {
+        color: #282828 !important;
+        width: 430px !important;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        padding-top: 15px !important;
+        padding-bottom: 10px !important;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #ffffff;
+        background: linear-gradient(166deg, #ffffff 30%, #ffffff 80%);
+    }
+
+    .px-gradient {
+        background: linear-gradient(to right, #C3C3C3, #898989);
+    }
+
+    .bonus-value {
+        background: linear-gradient(166deg, #E3EAE8 30%, #E3EAE8 80%);
+        color: #282828 !important;
+    }
+
+    .copy-contain {
+        background-image: linear-gradient(to top,#151414,#151414);
+        background-color: #151414;
+        border-radius: 10px;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .bonus-demo-section {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 20px;
+    }
+    .bonus-row {
+        margin-bottom: 40px;
+    }
+
+    .copy-scroll {
+        overflow: auto;
+        padding: 0 10px 0;
+        overflow-x: hidden;
+    }
+
+    .btn-menu {
+        background: linear-gradient(166deg, #EB3636 30%, #EB3636 80%);
+        color: #ffffff !important;
+    }
+
+    .pack-img {
+        max-height: 230px;
+    }
+
+    .gems-section {
+        margin-bottom: -60px;
+    }
+
+    .hs-button {
+        background-color: #EB3636 !important;
+        background-image: linear-gradient(to right, #EB3636, #EB3636) !important;
+        color: #ffffff !important;
+        font-family: cfm-light !important;
+        letter-spacing: 0.5px !important;
+        border-radius: 10px !important;
+        font-size: 14px;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+        border: 0px solid;
+    }
+
+    .read-more {
+        color: #FFFFFF;
+        font-size: 16px;
+        font-family: cfm-light;
+        opacity: 0.7;
+    }
+
+    .read-more:hover {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .copy-txt strong {
+        font-family: cfm-semibold;
+    }
+
+    @keyframes backgroundGlow {
+        0%,100% {
+            -webkit-box-shadow:0 0 15px #ffd98a;
+            -moz-box-shadow:0 0 15px #ffd98a;
+            -o-box-shadow:0 0 15px #ffd98a;
+            box-shadow:0 0 15px #ffd98a;
+            background-color:#ffd98a;
+            border-color:#ffd98a;
+        }
+        50% {
+            -webkit-box-shadow:0 0 15px #ffc767;
+            -moz-box-shadow:0 0 15px #ffc767;
+            -o-box-shadow:0 0 15px #ffc767;
+            box-shadow:0 0 15px #ffc767;
+            background-color:#ffc767;
+            border-color:#ffc767;
+        }
+    }
+    .btn-glow {
+        color: #ffffff !important;
+        font-family: proxima-nova-wide, sans-serif !important;
+        font-weight: 500;
+        padding: 20px 0px;
+        font-size: 18px !important;
+        letter-spacing: 0px !important;
+            box-shadow: 0 8px 28px rgba(227, 170, 62, 0.55);
+    animation: none;
+    transition: transform 0.3s
+ease;
+    background: linear-gradient(180deg, #e3aa3e 0%, #e3aa3e 100%);
+        width: 450px;
+        border-radius: 5px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn-glow:hover {
+        cursor: pointer;
+    }
+
+    .btn-glow-menu {
+        color: #FFFFFF !important;
+        font-family: cfm-semibold !important;
+        border-radius: 30px;
+        -webkit-box-shadow: 0 0 15px #ffd98a;
+        -moz-box-shadow: 0 0 15px #ffd98a;
+        -o-box-shadow: 0 0 15px #ffd98a;
+        box-shadow: 0 0 15px #ffd98a;
+        -webkit-animation-delay: 0s;
+        -webkit-animation-duration: 4s;
+        -webkit-animation-name: backgroundGlow;
+        -webkit-animation-fill-mode: forwards;
+        -webkit-animation-timing: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-animation-iteration-count: infinite;
+        padding: 5px 24px 5px 24px !important;
+        margin-top: 13px;
+    }
+    .pack-section {
+        margin-bottom: 50px;
+    }
+    .soundcloud-player {
+        padding-left: 20px;
+        margin-top: 60px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bonus-section {
+        margin-top: -70px;
+    }
+    .bundle-product-url {
+        color: #FFFFFF;
+    }
+    .bundle-product-url:hover {
+        color: #FFFFFF;
+    }
+    .demo-btn-contain {
+        margin: 2px 0 0 0;
+    }
+    .overview-txt .demo-btn-contain {
+        margin: 6px 0 0 0;
+    }
+    .demo-txt {
+        margin-top: 5px;
+    }
+    .fa-inverse {
+        color: #FFFFFF !important;
+    }
+    .mcol {
+        background-color: #151414;
+        color: #FFFFFF;
+        padding: 30px 20px 40px 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .mystery-specs {
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    .mcol .size {
+        font-family: cfm-semibold, sans-serif;
+        font-size: 50px;
+        margin-bottom: -10px;
+    }
+    .daw-image {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    .no-thanks-txt {
+        font-size: 18px;
+        margin-top: -10px;
+        text-decoration: underline;
+        margin-bottom: 30px;
+    }
+    .no-thanks-txt a {
+        color: #FFFFFF;
+        opacity: 0.7;
+    }
+    .logo img {
+        width: 90px;
+        margin-top: 30px;
+    }
+    .bs-wizard>.bs-wizard-step>.bs-wizard-dot {
+        margin-top: -13px;
+    }
+    .bs-wizard {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .jdgm-qa-badge {
+        display: none;
+    }
+    .stars-wrapper {
+        margin-top: 30px;
+    }
+    .reviews-section {
+        background-color: #090A0C;
+        margin-top: -50px;
+        padding-top: 50px;
+    }
+    .jdgm-ask-question-btn {
+        display: none !important;
+    }
+    .jdgm-write-rev-link {
+        color: #FFFFFF !important;
+    }
+    .demo-grid {
+        background-color: #151414;
+        background-image: linear-gradient(to top,#151414,#151414);
+        border-radius: 10px;
+    }
+
+    @media only screen and (max-width: 750px) {
+        .reviews-section {
+            padding-top: 0;
+        }
+        
+
+
+        .site-footer{
+            display: none!important;
+        }
+
+          .btn-glow {
+            font-size: 16px!important;
+            margin: 20px 0 -60px 0 !important;
+          }
+
+        .go3176171171 p{
+            line-height:1.4em!important;
+            margin: 10px 0 10px 0;
+            font-size: 13px!important;
+        }
+        .demo-row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .stars-wrapper {
+            margin-top: 15px;
+            margin-bottom: 35px !important;
+        }
+        .buy-btn {
+            float: none;
+        }
+
+        .pp-btn {
+            float: none;
+        }
+
+        .credit-apply img {
+            margin-top: 10px;
+        }
+
+        .product-description-contain .copy-scroll {
+            height: auto !important;
+        }
+
+        .product-description-contain {
+            height: 1015px;
+        }
+
+        .section-action {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .affirm-btn {
+            width: 350px !important;
+        }
+
+        .h1-overview {
+            font-size: 16px !important;
+            letter-spacing: 0px!important;
+            text-align: center !important;
+        }
+
+        .insta-header{
+            font-size: 20px!important;
+            margin: -10px 0 -45px 0 !important;
+        }
+
+        .h1-header-overview {
+            font-family: cfm-light, sans-serif !important;
+            font-size: 18px !important;
+            letter-spacing: 1px !important;
+            line-height: 30px !important;
+            margin-top: -15px !important;
+            margin-bottom: 20px !important;
+        }
+
+        .bundle-img {
+        width: 85%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        }
+
+        .bundle-main-header {
+            font-size: 20px;
+        }
+
+        .bundle-main-subheader {
+            font-family: cfm-semibold;
+            font-size: 14px;
+        }
+
+        .row-free-bundles {
+            margin-top: 0px !important;
+        }
+
+        .col-bundle {
+            margin-top: 20px;
+        }
+
+        .bonus-txt-light {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .modal-bundle-subheader {
+            font-family: cfm-semibold;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .pick-bundle {
+            margin-top: 0px !important;
+        }
+
+        .mobile-credit-btn {
+            background: linear-gradient(166deg, #ffffff 30%, #ffffff 80%);
+        }
+
+        .bf-header {
+            margin-bottom: -10px !important;
+            margin-top: 0 !important;
+        }
+        .btn-glow {
+            width: 100%;
+            font-size: 17px;
+            
+        }
+        .mobile-cta {
+            margin-top: 0;
+        }
+        .soundcloud-player {
+            width: 100%;
+            padding-left: 0px;
+            margin-top: 20px;
+        }
+        .left-txt {
+            display: inline-block;
+            font-size: 16px;
+        }
+        .demo-btn-contain {
+            margin: 0;
+        }
+        .overview-txt .demo-btn-contain {
+            margin: 0;
+        }
+        .contact-link {
+            display: none;
+        }
+        .daw-image {
+            margin: 40px 30px 70px;
+        }
+
+        .d-none{
+            display: none!important;
+        }
+
+        .subhead11{
+            margin-top:-20px!important;
+        }
+
+    }
+
+
+    .red-color{
+        color: #FF0000!important;
+    }
+
+    .accent-color {
+        color: #FF0000!important;
+    }
+
+
+    .btn-glow{
+        text-decoration: none!important;
+    }
+    .btn-glow:hover {
+        text-decoration: none!important;
+    }
+
+    .demo-row{
+        margin-bottom:40px;
+        margin-top: -20px;
+    }
+
+
+    .modal-content {
+        background-color: #1c1d21!important;
+        border-radius: 10px!important;
+    }
+
+
+
+    ._submit {
+        width: 100%;
+        font-family: cfm-semibold,sans-serif!important;
+        font-size: 20px!important;
+        margin-top: 15px;
+        color: #fff!important;
+        padding: 15px 70px;
+        letter-spacing: 1px!important;
+        border-radius: 0;
+        background: transparent!important;
+        -webkit-box-shadow: 0 0 15px #ffd98a;
+        -moz-box-shadow: 0 0 15px #ffd98a;
+        -o-box-shadow: 0 0 15px #ffd98a;
+        box-shadow: 0 0 15px #ffd98a;
+        -webkit-animation-delay: 0s;
+        -webkit-animation-duration: 4s;
+        -webkit-animation-name: backgroundGlow;
+        -webkit-animation-fill-mode: forwards;
+        -webkit-animation-timing: cubic-bezier(.215,.61,.355,1);
+        -webkit-animation-iteration-count: infinite;
+    }
+</style>
+
+{% assign demoIndex = 0 %}
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const emailField = document.querySelector("input[type='email']");
+    if (!emailField) return;
+
+    // Save email in localStorage as user types
+    emailField.addEventListener("input", function () {
+      localStorage.setItem("klaviyo_email", emailField.value.trim());
+    });
+  });
+</script>
+
+
+{% comment %}=== FLOATING RSVP NAV — mirrors the actual-homepage.liquid pattern.
+   Hidden by default; reveals after the user scrolls past 200px.
+   Desktop: pinned top-right.
+   Mobile: full-width centered top bar with dark backdrop. ==={% endcomment %}
+<nav class="nv-nav" aria-label="Floating RSVP">
+    <a class="nv-nav-btn rsvp-cta" data-toggle="modal" data-target="#dlModal">RSVP FOR FREE DOWNLOAD HERE</a>
+</nav>
+<script>
+(function() {
+    var nav = document.querySelector('.nv-nav');
+    if (!nav) return;
+    var SHOW_AT = 200;
+    var ticking = false;
+    function update() {
+        ticking = false;
+        var y = window.pageYOffset || document.documentElement.scrollTop;
+        nav.classList.toggle('is-visible', y > SHOW_AT);
+    }
+    window.addEventListener('scroll', function() {
+        if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    update();
+})();
+</script>
+
+
+<div class="product-section pt-2 pb-2 dark-bg white-text">
+    <div id="review-order" class="page-width">
+
+        <div class="logo text-center">
+            <a href="#"><img src="https://cdn.shopify.com/s/files/1/0129/7698/0032/files/min-new-cymatics-logo_150x.png?v=1611696468" alt="Logo Image" /></a>
+        </div>
+
+     
+
+
+        <h1 class="h1-overview text-center pb-4 mb-4 bf-header" style="line-height: 1.2em; margin-bottom:10px;">
+            <span class="insta-header">Get <span class="goldgoldgold">14 Melody &amp; MIDI Sample Packs</span> When You RSVP for Our <span class="goldgoldgold">Black Friday Livestreams</span> on <span class="goldgoldgold">Nov 25th - Dec 2nd</span> for <del>$320</del> <span class="goldgoldgold">FREE!</span></span>
+            <br/>
+           {% comment %}     Youve  been chosen to receive a free ticket <strong>8/25/25</strong> {% endcomment %}
+        </h1>
+
+        <p class="nv-page-sub">Get our FREE bundle of 14 Melody &amp; MIDI Sample Packs when you RSVP for our <br class="d-none d-md-block"/>Black Friday Livestreams, Nov 25th - Dec 2nd!</p>
+
+        <div class="text-center omega-pack my-5 ">
+            {% comment %} hero (user) {% endcomment %}
+            <img id="slideshow" class="d-none d-md-block" src="https://cdn.shopify.com/s/files/1/0129/7698/0032/files/w9_14_Melody_MIDI.webp?v=1792445842" alt="Cymatics 14 Free Melody &amp; MIDI Packs" width="" height="" />
+            <img id="slideshow" class="d-block d-md-none" src="https://cdn.shopify.com/s/files/1/0129/7698/0032/files/w9_14_Melody_MIDI.webp?v=1792445842" alt="Cymatics 14 Free Melody &amp; MIDI Packs" width="" height="" />
+                {% comment %} <img id="slideshow" src="https://cdn.shopify.com/s/files/1/0129/7698/0032/files/1.webp?v=1758128980" alt="Cymatics Sample Packs" width="" height="" />
+                <script>
+                    const images = [
+                        "https://cdn.shopify.com/s/files/1/0129/7698/0032/files/1.webp?v=1758128980",
+                        "https://cdn.shopify.com/s/files/1/0129/7698/0032/files/2.webp?v=1758128980",
+                        "https://cdn.shopify.com/s/files/1/0129/7698/0032/files/3.webp?v=1758128980",
+                        "https://cdn.shopify.com/s/files/1/0129/7698/0032/files/4.webp?v=1758128980",
+                        "https://cdn.shopify.com/s/files/1/0129/7698/0032/files/5.webp?v=1758128980",
+                        "https://cdn.shopify.com/s/files/1/0129/7698/0032/files/6.webp?v=1758128980",
+                        "https://cdn.shopify.com/s/files/1/0129/7698/0032/files/8.webp?v=1758128980",
+                        'https://cdn.shopify.com/s/files/1/0129/7698/0032/files/9.webp?v=1758128980',
+                        'https://cdn.shopify.com/s/files/1/0129/7698/0032/files/10.webp?v=1758128980',
+                        'https://cdn.shopify.com/s/files/1/0129/7698/0032/files/11.webp?v=1758128980'
+                    ];
+                    let currentIndex = 0; 
+                    const imageElement = document.getElementById("slideshow");
+                    function changeImage() {
+                        currentIndex = (currentIndex + 1) % images.length; // Cycle from 0 to 7
+                        imageElement.src = images[currentIndex];
+                    }
+                    setInterval(changeImage, 750); // Change image every 3 seconds
+                </script> {% endcomment %}
+        </div>
+
+
+        <div class="text-center omega-pack my-5 d-block d-md-none">
+                {% comment %} <img id="slideshow-mobile"
+                    src="https://cdn.shopify.com/s/files/1/0129/7698/0032/files/1.webp?v=1758128980"
+                    alt="Cymatics Sample Packs" />
+                </div>
+
+                <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                const images2 = [
+                    "https://cdn.shopify.com/s/files/1/0129/7698/0032/files/1.webp?v=1758128980",
+                    "https://cdn.shopify.com/s/files/1/0129/7698/0032/files/2.webp?v=1758128980",
+                    "https://cdn.shopify.com/s/files/1/0129/7698/0032/files/3.webp?v=1758128980",
+                    "https://cdn.shopify.com/s/files/1/0129/7698/0032/files/4.webp?v=1758128980",
+                    "https://cdn.shopify.com/s/files/1/0129/7698/0032/files/5.webp?v=1758128980",
+                    "https://cdn.shopify.com/s/files/1/0129/7698/0032/files/6.webp?v=1758128980",
+                    "https://cdn.shopify.com/s/files/1/0129/7698/0032/files/8.webp?v=1758128980",
+                    'https://cdn.shopify.com/s/files/1/0129/7698/0032/files/9.webp?v=1758128980',
+                    'https://cdn.shopify.com/s/files/1/0129/7698/0032/files/10.webp?v=1758128980',
+                    'https://cdn.shopify.com/s/files/1/0129/7698/0032/files/11.webp?v=1758128980'
+                ];
+
+                // preload
+                images2.forEach(src => { const img = new Image(); img.src = src; });
+
+                let currentIndex2 = 0;
+                const imageElement2 = document.getElementById("slideshow-mobile");
+                if (!imageElement2) return;
+
+                function changeImage2() {
+                    currentIndex2 = (currentIndex2 + 1) % images2.length;
+                    imageElement2.src = images2[currentIndex2]; // <- use currentIndex2 (not currentIndex)
+                }
+
+                setInterval(changeImage2, 750); // Change image every 1 seconds
+                });
+                </script> {% endcomment %}
+
+
+        </div>
+
+
+
+
+
+        <div id="payment" class="mx-auto">
+            <div class="row">
+                <div class="col-12 col-md-6 mx-auto text-center cta mb-3">
+                    <a class="btn-glow rsvp-cta" style="margin-bottom: 15px;" data-toggle="modal" data-target="#dlModal">RSVP FOR FREE DOWNLOAD HERE</a>
+                     {% comment %}      <p class="red-txt">Free invites are limited claim before offer expires.<br/> Ages {{ age }} and up only.</p> {% endcomment %}
+                </div>
+
+            </div>
+        </div>
+                <style>
+                    /* RSVP CTA buttons (2026-11-10): "RSVP FOR FREE DOWNLOAD HERE" stays on ONE line at every width down to 320px. Scoped to .rsvp-cta only. */
+                    #payment a.btn-glow.rsvp-cta, body a.btn-glow.rsvp-cta, .nv-nav a.nv-nav-btn.rsvp-cta { white-space: nowrap !important; }
+                    @media (min-width: 769px) and (max-width: 991px) { #payment a.btn-glow.rsvp-cta, body a.btn-glow.rsvp-cta { font-size: 16px !important; letter-spacing: 0.05em !important; padding-left: 36px !important; padding-right: 36px !important; } }
+                    @media (max-width: 768px) {
+                        #payment a.btn-glow.rsvp-cta, body a.btn-glow.rsvp-cta { font-size: min(14px, 3.9vw) !important; letter-spacing: 0.03em !important; padding-left: 16px !important; padding-right: 16px !important; }
+                        .nv-nav a.nv-nav-btn.rsvp-cta { font-size: min(12px, 3.5vw) !important; letter-spacing: 0.04em !important; padding-left: 16px !important; padding-right: 16px !important; }
+                    }
+                    .sk-countdown { margin: 26px auto 0 auto; text-align: center; }
+                    .sk-cd-label { font-family: 'Sora', proxima-nova-wide, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #ffc767; margin-bottom: 12px; }
+                    .sk-cd-boxes { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+                    .sk-cd-box { min-width: 72px; padding: 12px 10px; background-color: #14141a; border: 1px solid rgba(255,199,103,0.4); border-radius: 12px; box-shadow: 0 0 22px rgba(255,199,103,0.18); }
+                    .sk-cd-num { display: block; font-family: 'Sora', proxima-nova-wide, sans-serif; font-weight: 800; font-size: 32px; line-height: 1; color: #ffffff; }
+                    .sk-cd-unit { display: block; margin-top: 6px; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.55); }
+                    @media (max-width: 480px) { .sk-cd-box { min-width: 60px; padding: 10px 8px; } .sk-cd-num { font-size: 26px; } }
+                </style>
+                <div class="sk-countdown">
+                    <div class="sk-cd-label">Time Until Livestream</div>
+                    <div class="sk-cd-boxes">
+                        <div class="sk-cd-box"><span class="sk-cd-num" id="sk-cd-days" data-sk-cd="days">00</span><span class="sk-cd-unit">Days</span></div>
+                        <div class="sk-cd-box"><span class="sk-cd-num" id="sk-cd-hours" data-sk-cd="hours">00</span><span class="sk-cd-unit">Hours</span></div>
+                        <div class="sk-cd-box"><span class="sk-cd-num" id="sk-cd-mins" data-sk-cd="mins">00</span><span class="sk-cd-unit">Mins</span></div>
+                        <div class="sk-cd-box"><span class="sk-cd-num" id="sk-cd-secs" data-sk-cd="secs">00</span><span class="sk-cd-unit">Secs</span></div>
+                    </div>
+                </div>
+                <script>
+                (function() {
+                    /* Countdown to the first Black Friday livestream: Wed Nov 25 2026, 2:00 PM EST (2026-11-25T14:00:00-05:00 = 19:00 UTC).
+                       Numeric UTC timestamp (no date-string parsing), looks the boxes up on every tick by data-sk-cd
+                       (survives re-rendered/duplicated markup), starts now AND on DOMContentLoaded/pageshow, and never throws. */
+                    var target = Date.UTC(2026, 10, 25, 19, 0, 0);
+                    function pad(n){return (n<10?'0':'')+n;}
+                    function put(unit,val){var els=document.querySelectorAll('[data-sk-cd="'+unit+'"]');for(var i=0;i<els.length;i++){els[i].textContent=val;}}
+                    function tick(){
+                        try {
+                            var diff=target-(new Date()).getTime(); if(!(diff>0))diff=0;
+                            put('days',pad(Math.floor(diff/86400000)));
+                            put('hours',pad(Math.floor((diff%86400000)/3600000)));
+                            put('mins',pad(Math.floor((diff%3600000)/60000)));
+                            put('secs',pad(Math.floor((diff%60000)/1000)));
+                        } catch(e) {}
+                    }
+                    tick();
+                    if(!window.skCdInterval){window.skCdInterval=setInterval(tick,1000);}
+                    if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',tick);}
+                    window.addEventListener('pageshow',tick);
+                })();
+                </script>
+
+
+
+
+        
+        <div class="bd-highlight main-ps-copy">
+            <div class="copy-contain">
+                <div class="copy-scroll">
+                    <h1 class="specs-header"><span class="bold-txt">How to get your 14 Free Melody &amp; MIDI Packs:</span></h1>
+                    <div class="copy-txt" style="margin-top:0;">
+                        <p style="margin-top:0;">You’ll have a chance to get 14 premium melody and MIDI sample packs during our Black Friday week livestreams, Wednesday, November 25th to Wednesday, December 2nd at 2PM EST!</p>
+                        <p>Everybody who attends will receive all 14 packs completely for free, just for showing up to the stream.</p>
+                        <p>Click the RSVP button below to secure your spot for the day of the stream and get ready.</p>
+                        <p>We’ll send email and text reminders before the livestream.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="info-row-row">
+            <div class="row event-info1" style="justify-content: center;">
+                <div class="col col-12 col-md-4">
+                    <div class="grey-box">
+                        <p><span class="red-accent">Date:</span><br >Nov 25 - Dec 2</p>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-4">
+                    <div class="grey-box">
+                    <p><span class="red-accent">Time:</span><br />
+                            2PM EST
+                    </p>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-4">
+                    <div class="grey-box">
+                        <p><span class="red-accent">Location:</span><br>YouTube Livestream</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    
+
+    </div>
+</div>
+
+
+{% comment %} 14 packs = ONE tab section; built by scratchpad w9_subset_build.py {% endcomment %}
+{% include 'tabs-14melodies-w9' %}
+{% include 'w9-pack-anchor' %}
+
+<div class="nv-listen-cta">
+    <a class="btn-glow rsvp-cta" data-toggle="modal" data-target="#dlModal">RSVP FOR FREE DOWNLOAD HERE</a>
+</div>
+
+<section class="nv-feature">
+    <div class="page-width nv-feature-width">
+
+        <div class="row custom-pb">
+            <div class="col-12 col-md-6 align-self-center section-2-pr order-2 order-md-1">
+                <div class="header text-left those-headers"><span class="section-text">14 Handpicked Melody &amp; MIDI Packs Covering Every Style of Production</span></div>
+                <div class="copy-content text-left">
+                    <p>This collection brings together 14 of our most popular melody and MIDI sample packs spanning every style of production.</p>
+                    <p>Each pack was carefully selected to give you a diverse range of studio-quality sounds that work across every genre and production style.</p>
+                    <p>Every sample is ready to drag straight into your DAW and use immediately in your tracks.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 align-self-center order-1">
+                <img class="br-5" src="https://cdn.shopify.com/s/files/1/0129/7698/0032/files/catalystimage2.webp?v=1779824939" alt="Cymatics Melody &amp; MIDI Packs in a DAW piano roll" />
+            </div>
+        </div>
+
+        <div class="row custom-pb1">
+            <div class="col-12 col-md-6 align-self-center">
+                <img class="br-5" src="https://cdn.shopify.com/s/files/1/0129/7698/0032/files/cymroyalties_1.webp?v=1778606344" alt="100% Royalty Free Melody &amp; MIDI Packs" />
+            </div>
+            <div class="col-12 col-md-6 align-self-center section-3-pl">
+                <div class="header text-left those-headers"><span class="section-text">100% Royalty Free for Placements, Song Releases &amp; Sync Licensing</span></div>
+                <div class="copy-content text-left">
+                    <p>Every resource included inside of these sample packs is 100% Royalty Free for use.</p>
+                    <p>This means you receive full rights to release music, sell beats, land placements and work on sync deals using anything made with the MIDI or One Shots inside.</p>
+                    <p>And best of all, you keep 100% of your earnings from any music you make using these packs.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="nv-proof">
+    {% comment %} ── "Featured By" proof grid hidden — CTA button kept below ── {% endcomment %}
+    {% comment %}
+    <div class="nv-proof-header">
+        <div class="nv-proof-eyebrow">Real Records</div>
+        <h2 class="nv-proof-title">Cymatics Has been <span class="nv-proof-grad">Featured By</span>:</h2>
+        <p class="nv-proof-sub">Tap to watch the record and hear the Cymatics sound it was built on.</p>
+    </div>
+
+    <div class="nv-proof-grid">
+        <div class="nv-proof-card">
+            <a class="nv-proof-link video-btn" data-toggle="modal" data-target="#youtubeModal" data-src="https://player.vimeo.com/video/996688257">
+                <div class="nv-proof-img-wrap">
+                    <img class="nv-proof-img" src="https://cdn.shopify.com/s/files/1/0129/7698/0032/files/Future_Thumbnail_Alternative_3.webp?v=1705516033" alt="Future" loading="lazy" />
+                    <span class="nv-proof-play" aria-hidden="true">&#9654;</span>
+                </div>
+            </a>
+            <div class="nv-proof-artist">Future</div>
+            <div class="nv-proof-meta"><span class="nv-proof-meta-label">Song</span> <span class="nv-proof-meta-value">Gold Stacks</span></div>
+            <div class="nv-proof-meta"><span class="nv-proof-meta-label">Sample</span> <span class="nv-proof-meta-value">Masquerade &mdash; 100 BPM F Min</span></div>
+        </div>
+
+        <div class="nv-proof-card">
+            <a class="nv-proof-link video-btn" data-toggle="modal" data-target="#youtubeModal" data-src="https://player.vimeo.com/video/996688205">
+                <div class="nv-proof-img-wrap">
+                    <img class="nv-proof-img" src="https://cdn.shopify.com/s/files/1/0129/7698/0032/files/Roddy_Ricch_Thumbnail.webp?v=1705496627" alt="Roddy Ricch" loading="lazy" />
+                    <span class="nv-proof-play" aria-hidden="true">&#9654;</span>
+                </div>
+            </a>
+            <div class="nv-proof-artist">Roddy Ricch</div>
+            <div class="nv-proof-meta"><span class="nv-proof-meta-label">Song</span> <span class="nv-proof-meta-value">Bacc Seat</span></div>
+            <div class="nv-proof-meta"><span class="nv-proof-meta-label">Sample</span> <span class="nv-proof-meta-value">Omega Guitar Loop 10</span></div>
+        </div>
+
+        <div class="nv-proof-card">
+            <a class="nv-proof-link video-btn" data-toggle="modal" data-target="#youtubeModal" data-src="https://player.vimeo.com/video/996688283">
+                <div class="nv-proof-img-wrap">
+                    <img class="nv-proof-img" src="https://cdn.shopify.com/s/files/1/0129/7698/0032/files/Bad_Bunny_Thumbnail.webp?v=1705434787" alt="Bad Bunny" loading="lazy" />
+                    <span class="nv-proof-play" aria-hidden="true">&#9654;</span>
+                </div>
+            </a>
+            <div class="nv-proof-artist">Bad Bunny</div>
+            <div class="nv-proof-meta"><span class="nv-proof-meta-label">Song</span> <span class="nv-proof-meta-value">Un Coco</span></div>
+            <div class="nv-proof-meta"><span class="nv-proof-meta-label">Sample</span> <span class="nv-proof-meta-value">Crystal Guitars Vol. 2 &mdash; 'Bicycle'</span></div>
+        </div>
+
+        <div class="nv-proof-card">
+            <a class="nv-proof-link video-btn" data-toggle="modal" data-target="#youtubeModal" data-src="https://player.vimeo.com/video/996688215">
+                <div class="nv-proof-img-wrap">
+                    <img class="nv-proof-img" src="https://cdn.shopify.com/s/files/1/0129/7698/0032/files/Megan_Thee_Stallion_Thumbnail.webp?v=1705503356" alt="Megan Thee Stallion" loading="lazy" />
+                    <span class="nv-proof-play" aria-hidden="true">&#9654;</span>
+                </div>
+            </a>
+            <div class="nv-proof-artist">Megan Thee Stallion</div>
+            <div class="nv-proof-meta"><span class="nv-proof-meta-label">Song</span> <span class="nv-proof-meta-value">Not Nice</span></div>
+            <div class="nv-proof-meta"><span class="nv-proof-meta-label">Sample</span> <span class="nv-proof-meta-value">Zodiac II &mdash; 'Grandiose'</span></div>
+        </div>
+
+        <div class="nv-proof-card">
+            <a class="nv-proof-link video-btn" data-toggle="modal" data-target="#youtubeModal" data-src="https://player.vimeo.com/video/996688271">
+                <div class="nv-proof-img-wrap">
+                    <img class="nv-proof-img" src="https://cdn.shopify.com/s/files/1/0129/7698/0032/files/Central_Cee_Thumbnail.webp?v=1705496627" alt="Central Cee" loading="lazy" />
+                    <span class="nv-proof-play" aria-hidden="true">&#9654;</span>
+                </div>
+            </a>
+            <div class="nv-proof-artist">Central Cee</div>
+            <div class="nv-proof-meta"><span class="nv-proof-meta-label">Song</span> <span class="nv-proof-meta-value">Dun Deal</span></div>
+            <div class="nv-proof-meta"><span class="nv-proof-meta-label">Sample</span> <span class="nv-proof-meta-value">Gems Vol 7 &mdash; 'Seizure'</span></div>
+        </div>
+
+        <div class="nv-proof-card">
+            <a class="nv-proof-link video-btn" data-toggle="modal" data-target="#youtubeModal" data-src="https://player.vimeo.com/video/996688246">
+                <div class="nv-proof-img-wrap">
+                    <img class="nv-proof-img" src="https://cdn.shopify.com/s/files/1/0129/7698/0032/files/Lil_Uzi_Vert_Thumbnail.webp?v=1705496628" alt="Lil Uzi Vert" loading="lazy" />
+                    <span class="nv-proof-play" aria-hidden="true">&#9654;</span>
+                </div>
+            </a>
+            <div class="nv-proof-artist">Lil Uzi Vert</div>
+            <div class="nv-proof-meta"><span class="nv-proof-meta-label">Song</span> <span class="nv-proof-meta-value">She Never Been To Pluto</span></div>
+            <div class="nv-proof-meta"><span class="nv-proof-meta-label">Sample</span> <span class="nv-proof-meta-value">'Kitsch'</span></div>
+        </div>
+
+        <div class="nv-proof-card">
+            <a class="nv-proof-link video-btn" data-toggle="modal" data-target="#youtubeModal" data-src="https://player.vimeo.com/video/996688194">
+                <div class="nv-proof-img-wrap">
+                    <img class="nv-proof-img" src="https://cdn.shopify.com/s/files/1/0129/7698/0032/files/Trippie_Redd_Thumbnail.webp?v=1705496627" alt="Trippie Redd" loading="lazy" />
+                    <span class="nv-proof-play" aria-hidden="true">&#9654;</span>
+                </div>
+            </a>
+            <div class="nv-proof-artist">Trippie Redd</div>
+            <div class="nv-proof-meta"><span class="nv-proof-meta-label">Song</span> <span class="nv-proof-meta-value">Miss The Rage</span></div>
+            <div class="nv-proof-meta"><span class="nv-proof-meta-label">Sample</span> <span class="nv-proof-meta-value">Odyssey &mdash; Drop Loop 7</span></div>
+        </div>
+
+        <div class="nv-proof-card">
+            <a class="nv-proof-link video-btn" data-toggle="modal" data-target="#youtubeModal" data-src="https://player.vimeo.com/video/996688235">
+                <div class="nv-proof-img-wrap">
+                    <img class="nv-proof-img" src="https://cdn.shopify.com/s/files/1/0129/7698/0032/files/G_Eazy_Thumbnail.webp?v=1705503356" alt="G-Eazy" loading="lazy" />
+                    <span class="nv-proof-play" aria-hidden="true">&#9654;</span>
+                </div>
+            </a>
+            <div class="nv-proof-artist">G-Eazy</div>
+            <div class="nv-proof-meta"><span class="nv-proof-meta-label">Song</span> <span class="nv-proof-meta-value">Full Time Cappers</span></div>
+            <div class="nv-proof-meta"><span class="nv-proof-meta-label">Sample</span> <span class="nv-proof-meta-value">Empire Melody Loop 4</span></div>
+        </div>
+    </div>
+    {% endcomment %}
+
+    <div class="nv-proof-cta">
+        <a class="btn-glow rsvp-cta" data-toggle="modal" data-target="#dlModal">RSVP FOR FREE DOWNLOAD HERE</a>
+    </div>
+</section>
+
+<script>
+{% comment %} Waveform players for the .nv-listen section. IIFE-scoped, vanilla JS,
+   container IDs prefixed nv- so we don't pick up anything else on the page.
+   With the new Mirage layout there are 12 single-player cards (containers
+   1–12). The arrays below are trimmed to match. {% endcomment %}
+(function() {
+    document.addEventListener("DOMContentLoaded", function() {
+        var nvAudioSources = [
+            {% comment %} 1. Cyprus — MIDI {% endcomment %}
+            'https://cdn.shopify.com/s/files/1/0129/7698/0032/t/9/assets/1-cymatics-cyprus-midi-a-min-instr-overblown-woodwind-keys-seasick-bass-mountain-king.m4a?v=1779822893',
+            {% comment %} 2. Blossom — MIDI {% endcomment %}
+            'https://cdn.shopify.com/s/files/1/0129/7698/0032/t/9/assets/2-cymatics-blossom-midi-b-min-bass-80s-weekend-pad-android-synth-80s-brass.m4a?v=1779822896',
+            {% comment %} 3. Anymore — MIDI {% endcomment %}
+            'https://cdn.shopify.com/s/files/1/0129/7698/0032/t/9/assets/3-cymatics-anymore-midi-a-min-bass-analog-depth-pad-flow-state-instr-relaxed-guitar.m4a?v=1779822897',
+            {% comment %} 4. Eons — MIDI {% endcomment %}
+            'https://cdn.shopify.com/s/files/1/0129/7698/0032/t/9/assets/4-cymatics-eons-midi-d-min-bass-lower-pluck-grace-synth-pizzicato.m4a?v=1779822899',
+            {% comment %} 5. Round Up — MIDI {% endcomment %}
+            'https://cdn.shopify.com/s/files/1/0129/7698/0032/t/9/assets/5-cymatics-round-up-midi-g-min-synth-terrestrial-synth-nirvana-bass-zimmer-reese.m4a?v=1779822901',
+            {% comment %} 6. Dominos — MIDI {% endcomment %}
+            'https://cdn.shopify.com/s/files/1/0129/7698/0032/t/9/assets/6-cymatics-dominos-midi-g-min-pad-nostalgia-bass-girth-pluck-fever.m4a?v=1779822902',
+            {% comment %} 7. Juggling — MIDI {% endcomment %}
+            'https://cdn.shopify.com/s/files/1/0129/7698/0032/t/9/assets/7-cymatics-juggling-midi-b-min-instr-metallophone-bass-zimmer-reese-pad-lucky-instr-overblown-woodwind.m4a?v=1779822904',
+            {% comment %} 8. Kisses — MIDI {% endcomment %}
+            'https://cdn.shopify.com/s/files/1/0129/7698/0032/t/9/assets/8-cymatics-kisses-midi-g-min-keys-festive-pad-serenity-bass-simple.m4a?v=1779822906'
+        ];
+
+        var nvJsonSources = [
+            {% comment %} 1. Cyprus — MIDI {% endcomment %}
+            'https://cdn.shopify.com/s/files/1/0129/7698/0032/t/9/assets/1-cymatics-cyprus-midi-a-min-instr-overblown-woodwind-keys-seasick-bass-mountain-king.json?v=1779822891',
+            {% comment %} 2. Blossom — MIDI {% endcomment %}
+            'https://cdn.shopify.com/s/files/1/0129/7698/0032/t/9/assets/2-cymatics-blossom-midi-b-min-bass-80s-weekend-pad-android-synth-80s-brass.json?v=1779822894',
+            {% comment %} 3. Anymore — MIDI {% endcomment %}
+            'https://cdn.shopify.com/s/files/1/0129/7698/0032/t/9/assets/3-cymatics-anymore-midi-a-min-bass-analog-depth-pad-flow-state-instr-relaxed-guitar.json?v=1779822896',
+            {% comment %} 4. Eons — MIDI {% endcomment %}
+            'https://cdn.shopify.com/s/files/1/0129/7698/0032/t/9/assets/4-cymatics-eons-midi-d-min-bass-lower-pluck-grace-synth-pizzicato.json?v=1779822898',
+            {% comment %} 5. Round Up — MIDI {% endcomment %}
+            'https://cdn.shopify.com/s/files/1/0129/7698/0032/t/9/assets/5-cymatics-round-up-midi-g-min-synth-terrestrial-synth-nirvana-bass-zimmer-reese.json?v=1779822900',
+            {% comment %} 6. Dominos — MIDI {% endcomment %}
+            'https://cdn.shopify.com/s/files/1/0129/7698/0032/t/9/assets/6-cymatics-dominos-midi-g-min-pad-nostalgia-bass-girth-pluck-fever.json?v=1779822901',
+            {% comment %} 7. Juggling — MIDI {% endcomment %}
+            'https://cdn.shopify.com/s/files/1/0129/7698/0032/t/9/assets/7-cymatics-juggling-midi-b-min-instr-metallophone-bass-zimmer-reese-pad-lucky-instr-overblown-woodwind.json?v=1779822903',
+            {% comment %} 8. Kisses — MIDI {% endcomment %}
+            'https://cdn.shopify.com/s/files/1/0129/7698/0032/t/9/assets/8-cymatics-kisses-midi-g-min-keys-festive-pad-serenity-bass-simple.json?v=1779822905'
+        ];
+
+        var elements = document.querySelectorAll('[id^="nv-waveform-container"]');
+
+        elements.forEach(function(element) {
+            var match = element.id.match(/\d+/);
+            if (!match) return;
+            var index = parseInt(match[0], 10);
+            var audioSrc = nvAudioSources[index - 1];
+            var jsonSrc = nvJsonSources[index - 1];
+            if (!audioSrc || !jsonSrc) return;
+            buildPlayer(element, index, audioSrc, jsonSrc);
+        });
+
+        function stopAllAudio() {
+            var playingAudios = document.querySelectorAll('.nv-listen audio.nv-playing');
+            playingAudios.forEach(function(a) {
+                a.pause();
+                a.classList.remove('nv-playing');
+                a.currentTime = 0;
+            });
+            document.querySelectorAll('.nv-listen .fa-pause').forEach(function(icon) {
+                icon.classList.replace('fa-pause', 'fa-play');
+            });
+        }
+
+        function buildPlayer(container, index, audioSrc, jsonSrc) {
+            var clickProgress = 0;
+
+            var div = document.createElement('div');
+            div.setAttribute('class', 'waveform');
+
+            var canvas = document.createElement('canvas');
+            canvas.width = 1000;
+            canvas.height = 60;
+            canvas.setAttribute('class', 'waveform-canvas');
+            canvas.setAttribute('data-audio-src', audioSrc);
+            canvas.setAttribute('data-json-src', jsonSrc);
+
+            var audio = document.createElement('audio');
+            audio.src = audioSrc;
+            audio.preload = 'auto';
+            audio.controls = true;
+
+            var playButton = document.createElement('div');
+            playButton.setAttribute('id', 'nv-btn-contain' + index);
+            playButton.setAttribute('class', 'demo-btn-contain demo-btn-play');
+            playButton.setAttribute('data-audio-src', audioSrc);
+            playButton.innerHTML = '<i id="nv-pbtn' + index + '" class="demo-btn fas fa-play fa-inverse"></i>';
+
+            playButton.addEventListener('click', function() {
+                var icon = playButton.querySelector('i');
+                if (icon.classList.contains('fa-play')) {
+                    stopAllAudio();
+                    icon.classList.remove('fa-play');
+                    icon.classList.add('fa-pause');
+                    audio.play();
+                    audio.classList.add('nv-playing');
+                } else {
+                    icon.classList.remove('fa-pause');
+                    icon.classList.add('fa-play');
+                    audio.classList.remove('nv-playing');
+                    audio.pause();
+                }
+            });
+
+            var waveform = document.createElement('div');
+            waveform.setAttribute('id', 'nv-waveform' + index);
+            waveform.setAttribute('class', 'waveform-contain');
+            waveform.appendChild(canvas);
+            waveform.appendChild(audio);
+
+            div.appendChild(playButton);
+            div.appendChild(waveform);
+            container.appendChild(div);
+
+            fetch(jsonSrc)
+                .then(function(response) { return response.json(); })
+                .then(function(data) {
+                    var ctx = canvas.getContext('2d');
+                    var samples = data.samples;
+                    drawWaveform(samples, ctx, canvas.width, canvas.height, 0);
+
+                    canvas.addEventListener('click', function(e) {
+                        stopAllAudio();
+                        var rect = canvas.getBoundingClientRect();
+                        var clickX = e.clientX - rect.left;
+                        clickProgress = clickX / rect.width;
+                        audio.currentTime = clickProgress * audio.duration;
+
+                        var icon = playButton.querySelector('i');
+                        if (icon.classList.contains('fa-play')) {
+                            icon.classList.remove('fa-play');
+                            icon.classList.add('fa-pause');
+                        }
+                        audio.play();
+                        audio.classList.add('nv-playing');
+                    });
+
+                    audio.addEventListener('loadedmetadata', function() {
+                        audio.currentTime = clickProgress * audio.duration;
+                    });
+
+                    audio.addEventListener('timeupdate', function() {
+                        var progress = audio.currentTime / audio.duration;
+                        drawWaveform(samples, ctx, canvas.width, canvas.height, progress);
+                    });
+
+                    audio.addEventListener('ended', function() {
+                        stopAllAudio();
+                    });
+                })
+                .catch(function(error) { console.warn('[nv-listen] JSON fetch failed for index ' + index + ':', error); });
+        }
+
+        function drawWaveform(samples, ctx, width, height, progress) {
+            var maxAbsoluteValue = Math.max.apply(null, samples.map(Math.abs));
+            var halfHeight = height / 2;
+            var step = halfHeight / maxAbsoluteValue;
+            var endIndex = Math.floor(samples.length * progress);
+
+            ctx.clearRect(0, 0, width, height);
+
+            for (var i = 0; i < samples.length; i++) {
+                var normalizedSample = Math.abs(samples[i]) * step;
+                var x = (i / samples.length) * width;
+                var y1 = halfHeight - normalizedSample;
+                var y2 = halfHeight + normalizedSample;
+
+                if (i <= endIndex) {
+                    ctx.strokeStyle = '#ffc767';
+                } else {
+                    ctx.strokeStyle = 'rgba(255, 255, 255, 0.28)';
+                }
+
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.moveTo(x, y1);
+                ctx.lineTo(x, y2);
+                ctx.stroke();
+            }
+        }
+    });
+})();
+</script>
+
+{% comment %}=== Video modal — fired by .video-btn clicks ==={% endcomment %}
+<div class="modal fade" id="youtubeModal" tabindex="-1" role="dialog" aria-labelledby="proofModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered nv-proof-modal-dialog" role="document">
+        <div class="modal-content nv-proof-modal-content">
+            <div class="modal-body nv-proof-modal-body">
+                <button type="button" class="close nv-proof-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="nv-proof-video">
+                    <iframe id="samplevideo" src="" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    {% comment %} Set Vimeo iframe src on click; clear it on modal hide so the
+       video stops playing in the background. Vanilla JS so we don't depend
+       on jQuery being present on every page. {% endcomment %}
+    document.addEventListener('click', function(e) {
+        var trigger = e.target.closest('.video-btn');
+        if (!trigger) return;
+        var src = trigger.getAttribute('data-src');
+        if (!src) return;
+        var video = document.getElementById('samplevideo');
+        if (!video) return;
+        var sep = src.indexOf('?') === -1 ? '?' : '&';
+        video.src = src + sep + 'autoplay=1&modestbranding=1&showinfo=0';
+    });
+    var modal = document.getElementById('youtubeModal');
+    function stopVideo() {
+        var v = document.getElementById('samplevideo');
+        if (v) v.src = '';
+    }
+    function closeModal() {
+        if (!modal) return;
+        modal.classList.remove('show');
+        modal.style.display = 'none';
+        modal.setAttribute('aria-hidden', 'true');
+        document.querySelectorAll('.modal-backdrop').forEach(function(el) {
+            el.parentNode && el.parentNode.removeChild(el);
+        });
+        document.body.classList.remove('modal-open');
+        document.body.style.removeProperty('padding-right');
+        document.body.style.removeProperty('overflow');
+    }
+    if (modal) {
+        {% comment %} Bootstrap's official close path. {% endcomment %}
+        modal.addEventListener('hidden.bs.modal', stopVideo);
+
+        {% comment %} Backdrop click — when target IS the modal element itself
+           (not the .modal-dialog inside it), the user clicked the dim
+           area outside the dialog. Stop the video AND close the modal
+           manually in case Bootstrap's backdrop-dismiss didn't run. {% endcomment %}
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                stopVideo();
+                closeModal();
+            }
+        });
+
+        {% comment %} Escape key safety net. {% endcomment %}
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.classList.contains('show')) {
+                stopVideo();
+            }
+        });
+    }
+})();
+</script>
+
+
+{% comment %}Upsell Modal{% endcomment %}
+<div class="modal fade upsell-modal" id="dlModal" role="dialog" aria-labelledby="upsellModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+              {% if page_klaviyo_id %}
+                <div class="klaviyo-form-{{ page_klaviyo_id }}"></div>
+              {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- start regular template -->
+{% layout 'ss.product.page' %}
+
+<link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<link rel="stylesheet" href="https://use.typekit.net/onj3hbe.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<style>    
+    
+
+
+    @keyframes backgroundGlow33 {
+    0%, 100% {
+        -webkit-box-shadow: 0 0 15px #ffc767;
+        -moz-box-shadow: 0 0 15px #ffc767;
+        -o-box-shadow: 0 0 15px #ffc767;
+        box-shadow: 0 0 15px #ffc767;
+        background-color: #ffc767;
+        border-color: #ffc767;
+    }
+    50% {
+        -webkit-box-shadow: 0 0 15px #ffc767;
+        -moz-box-shadow: 0 0 15px #ffc767;
+        -o-box-shadow: 0 0 15px #ffc767;
+        box-shadow: 0 0 15px #ffc767;
+        background-color: #ffc767;
+        border-color: #ffc767;
+    }
+}
+
+    #spring-promo-banner{
+        display: none;
+    }
+    .site-header {
+        display: none;
+    }
+    .btn {
+        background: none;
+    }
+    .page-container {
+        background-color: #0E0E11;
+    }
+    .dark-design h1 {
+        font-family: proxima-nova-wide, sans-serif !important;
+        text-transform: none !important;
+        font-weight: 900;
+        font-size: 42px;
+        color: #F5F5F5;
+        padding-top: 30px;
+        line-height: 1.2em !important;
+    }
+    .dark-design h3 {
+        font-family: proxima-nova-wide, sans-serif;
+        font-weight: 400;
+        color: #BDBEC6;
+        font-size: 22px;
+        margin-top: 0px;
+    }
+    .faq-subheader {
+        font-family: proxima-nova-wide, sans-serif;
+        font-weight: 400;
+        color: #BDBEC6;
+        font-size: 22px;
+        margin-top: 0px;
+    }
+    .wistia-contain {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        min-height: 400px;
+    }
+    strong {
+        font-weight: 900;
+    }
+    .section-header {
+        font-family: proxima-nova-wide, sans-serif;
+        font-weight: 200;
+        color: #F5F5F5;
+        font-size: 38px;
+        margin-bottom: 65px;
+    }
+    .section-header-prize {
+        font-family: proxima-nova-wide, sans-serif;
+        font-weight: 200;
+        color: #F5F5F5;
+        font-size: 38px;
+        margin-bottom: 0px;
+    }
+    .col-header {
+        font-family: proxima-nova-wide, sans-serif;
+        font-weight: 900;
+        font-size: 28px;
+        color: #ffc767;
+        line-height: 1.2em;
+        margin-bottom: 30px;
+    }
+    .event-info p {
+        font-family: proxima-nova-wide;
+        font-weight: 400;
+        color: #C5C6CD;
+        font-size: 16px;
+    }
+    .pt-80 {
+        padding-top: 120px;
+    }
+    .pt-60 {
+        padding-top: 60px;
+    }
+    .pricing-header {
+        background-color: #F5F5F5;
+        font-family: 'proxima-nova-wide';
+        font-size: 22px;
+        font-weight: 900;
+        padding: 0px 0px;
+    }
+    .event-col {
+        border: 1px solid #F5F5F5;
+    }
+    .card {
+        background-color: transparent;
+        /*border: 1px solid #F5F5F5;*/
+    }
+    .card-header {
+        background-color: #F5F5F5;
+        border-left: 1px solid #F5F5F5;
+        border-right: 1px solid #F5F5F5;
+        border-top: 1px solid #F5F5F5;
+    }
+    .card-body {
+        border-left: 1px solid #F5F5F5;
+        border-right: 1px solid #F5F5F5;
+    }
+    .card li {
+        font-family: proxima-nova-wide;
+        font-weight: 400;
+        color: #C5C6CD;
+        font-size: 16px;
+    }
+    .card .btn-primary {
+        font-family: proxima-nova-wide, sans-serif !important;
+        font-weight: 900;
+        background-color: #F5F5F5 !important;
+        color: #070708 !important;
+        border: none;
+        text-transform: none;
+        letter-spacing: 0px !important;
+        border-radius: 5px !important;
+    }
+    .card .btn-primary:hover {
+        transform: scale(1.04);
+    }
+    .card-footer {
+        font-family: proxima-nova-wide, sans-serif;
+        font-size: 16px;
+        background-color: #27292E;
+        color: #F5F5F5;
+        border-left: 1px solid #F5F5F5;
+        border-right: 1px solid #F5F5F5;
+        border-top: 1px solid #27292E;
+        border-bottom: 1px solid #F5F5F5;
+    }
+    .general-btn-margin {
+        margin-top: 20px;
+    }
+    .vip-btn-margin {
+        margin-top: 128px;
+    }
+    .event-info-location p {
+        margin-bottom: 5px;
+    }
+    .red-accent {
+        color: #ffc767;
+        font-weight: 900;
+        font-size: 23px;
+    }
+    .btn-tickets {
+        font-family: proxima-nova-wide, sans-serif !important;
+        font-weight: 500;
+        color: #F5F5F5 !important;
+        border: none;
+        text-transform: none;
+        letter-spacing: 0px !important;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 400px;
+        font-size: 22px !important;
+        border-radius: 5px !important;
+        padding: 15px 0px;
+        transition: transform 0.3s ease;
+        -webkit-box-shadow: 0 0 15px #ffc767;
+        -moz-box-shadow: 0 0 15px #ffc767;
+        -o-box-shadow: 0 0 15px #ffc767;
+        box-shadow: 0 0 15px #ffc767;
+        -webkit-animation-delay: 0s;
+        -webkit-animation-duration: 6s;
+        -webkit-animation-name: backgroundGlow33;
+        -webkit-animation-fill-mode: forwards;
+        -webkit-animation-timing: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-animation-iteration-count: infinite; 
+        text-align: center;
+        text-decoration: none;
+    }
+
+
+
+    .btn-tickets:hover {
+        transform: scale(1.05);
+        opacity: 1;
+                text-decoration: none;
+    }
+    .page-logo-img {
+        width: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+    .form-label {
+        color: #F5F5F5;
+        font-family: proxima-nova-wide, sans-serif;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+    .card-title {
+        padding-top: 10px !important;
+    }
+    .info-beat {
+        font-family: 'proxima-nova-wide';
+        font-weight: 400;
+        color: #C5C6CD;
+        font-size: 16px;
+        font-style: italic;
+    }
+    .prize-header {
+        font-family: proxima-nova-wide, sans-serif !important;
+        color: #F5F5F5;
+        font-size: 28px;
+        letter-spacing: 0.5px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+        font-weight: 800;
+    }
+    .prize-description p {
+        color: #BDBEC6;
+        opacity: 1;
+        font-family: proxima-nova-wide, sans-serif;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        margin-bottom: 0px;
+    }
+    .pr-10 {
+        padding-right: 7%;
+    }
+    .pl-10 {
+        padding-left: 7%;
+    }
+    .prize-row {
+        margin-top: 120px;
+    }
+    .prize-value {
+        color: #F5F5F5;
+        font-family: proxima-nova-wide, sans-serif;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        margin-bottom: 20px;
+    }
+    .gift-card {
+        padding-right: 300px;
+    }
+    .pg-gift-card {
+        padding-left: 300px;
+    }
+    .faq-accd {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .faq-accd .card {
+        background-color: transparent !important;
+        color: #ffffff !important;
+        font-family: cfm-light, sans-serif !important;
+        letter-spacing: 0 !important;
+        font-size: 14px !important;
+        border-radius: 4px !important;
+    }
+    .accordion .card-header {
+        background-color: #1C1D21;
+        border: none;
+        margin-bottom: 15px !important;
+    }
+    .faq-accd button {
+        color: #ffffff !important;
+        font-family: proxima-nova-wide, sans-serif !important;
+        font-weight: 900;
+        background: transparent !important;
+        display: block;
+        text-align: center;
+        width: 100%;
+        text-decoration: none;
+        text-transform: none;
+    }
+    .faq-accd .card-body {
+        border: none;
+    }
+    .faq-accd .card-body p {
+        color: #ffffff !important;
+        font-family: proxima-nova-wide, sans-serif !important;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+    }
+    .top-left1 {
+        position: absolute;
+        width: 120px;
+        top: 15px;
+        left: 2.5%;
+        max-width: 200px;
+    }
+    .luxbar-item a {
+        font-family: proxima-nova-wide, sans-serif;
+        font-weight: 500;
+        color: #C5C6CD;
+    }
+    .btn-glow-menu {
+        font-family: proxima-nova-wide, sans-serif !important;
+        font-weight: 500 !important;
+        color: #F5F5F5 !important;
+        border: none;
+        text-transform: none;
+        letter-spacing: 0px !important;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px !important;
+        border-radius: 5px !important;
+        padding: 6px 25px !important;
+        transition: transform 0.3s ease;
+        -webkit-box-shadow: 0 0 15px #ffc767;
+        -moz-box-shadow: 0 0 15px #ffc767;
+        -o-box-shadow: 0 0 15px #ffc767;
+        box-shadow: 0 0 15px #ffc767;
+        -webkit-animation-delay: 0s;
+        -webkit-animation-duration: 6s;
+        -webkit-animation-name: backgroundGlow33;
+        -webkit-animation-fill-mode: forwards;
+        -webkit-animation-timing: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-animation-iteration-count: infinite; 
+    }
+    .event-copy-info {
+        background-color: #1C1D21;
+        padding: 15px 25px 20px 25px;
+        border-radius: 5px;
+        margin-bottom: 60px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .event-copy-info header {
+        font-family: proxima-nova-wide, sans-serif;
+        font-weight: 900;
+        font-size: 32px;
+        color: #F5F5F5;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .event-copy-info p {
+        font-family: proxima-nova-wide;
+        font-weight: 400;
+        color: #C5C6CD;
+        font-size: 16px;
+    }
+    .red-acc {
+        color: #E82021;
+        font-family: proxima-nova-wide, sans-serif;
+        font-weight: 900;
+        font-size: 27px;
+    }
+    .red-acc-bottom {
+        margin-top: -65px;
+        margin-bottom: 60px;
+    }
+
+    /* Review Styles */
+    .review-section{
+        background-color: #1C1D21;
+        padding: 105px 0 60px 0;
+        margin-top: 0px;
+    }
+
+    .review-header{
+        font-family: proxima-nova-wide, sans-serif !important;
+        color: #e3aa3e;
+        font-size: 28px !important;
+        font-weight: 600;
+        letter-spacing: 0px;
+        margin-bottom: -10px;
+        line-height: 1.1em;
+    }
+
+    .product-review{
+        width: 70%;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .jdgm-rev__prod-link{
+        pointer-events: none;
+        color: #f5f5f5!important;
+    }
+
+    .jdgm-write-rev-link, .jdgm-ask-question-btn{
+        color: white!important;
+        font-family: cfm-semibold, sans-serif;
+    }
+
+    .jdgm-ask-question-btn, .jdgm-histogram, .jdgm-qa-badge, .jdgm-form-wrapper p, .jdgm-sort-dropdown, .jdgm-rev-widg__sort-wrapper, .jdgm-rev__votes {
+        display: none!important;
+    }
+
+    .jdgm-submit-rev{
+        color: white!important;
+        background: rgba(178,178,178,.6)!important;
+    }
+
+    .jdgm-rev-widg{
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+    }
+
+    .jdgm-prev-badge{
+        margin-top: 8px;
+    }
+
+    .jdgm-prev-badge__text {
+        font-size: 12px;
+    }
+
+    .diablo-img{
+        width: 70%;
+        float: right;
+    }
+
+    .jdgm-widget-actions-wrapper{
+        display: none;
+    }
+
+    /* End Review Styles */    
+
+    .age-text{
+        text-align: center;
+        font-family: proxima-nova-wide, sans-serif !important;
+        color: red;
+        font-size: 17px !important;
+        font-weight: 400;
+        line-height: 1.1em;
+        margin: -30px 0 50px 0;
+    }
+
+
+    .age-text2{
+        margin: -60px 0 0 0;
+    }
+    .sold-out-text{
+        text-align: center;
+        font-family: proxima-nova-wide, sans-serif !important;
+        color: red;
+        font-size: 50px !important;
+        font-weight: 600;
+        line-height: 1.1em;
+        margin-bottom: -80px;
+    }
+
+
+        .event-info1 p{
+            color: rgba(255,255,255,0.95);
+            text-align: center;
+            font-family: proxima-nova-wide, sans-serif;
+            font-weight: 700;
+            font-size: 27px;
+            line-height: 1.3;
+        }
+
+        .grey-box{
+            width: 100%;
+            background-color: #17181C;
+            border-radius: 5px;
+            padding: 20px 25px 25px 25px;
+
+        }
+
+    .info-row-row{
+        width: 80%; 
+        max-width: 1100px;
+        margin: 20px auto 120px auto;
+    }
+
+
+    .purple-accent{
+        color: #ffc767;
+    }    
+
+    .red-txt{
+        font-family: proxima-nova-wide, sans-serif;
+        font-weight: 300;
+        color: red;
+    }
+    .insta-header{
+        font-size: 36px;
+        font-family: 'Sora', sans-serif !important;
+        color: #ffffff;
+        font-weight: 800;
+        display: block;
+        line-height: 1.15em;
+    }
+
+    @keyframes textAnimate {
+  0% {
+    text-shadow: 0 0 0.02em hsl(60 100% 50% / 0.5)
+    , 0 0 0.1em hsl(50 100% 63% / 0.5)
+    , 0 0 0.2em hsl(45 100% 62% / 0.5)
+    , 0 0 0.6em hsl(40 100% 58% / 0.5)
+    , 0 0 0.8em hsl(35 100% 54% / 0.5);
+  }
+  100% {
+    text-shadow: 0 0 0.02em hsl(60 100% 50% / 0.5)
+    , 0 0 0.1em hsl(50 100% 63% / 0.5)
+    , 0 0 0.2em hsl(45 100% 62% / 0.5)
+    , 0 0 0.6em hsl(40 100% 58% / 0.5)
+    , 0 0 0.8em hsl(35 100% 54% / 0.5);
+  }
+}
+
+    .goldgoldgold{
+    text-decoration: none;
+    transition: text-shadow 0.5s 
+        ease, color 0.3s 
+        ease;
+            animation: textAnimate 10s 
+        linear infinite;
+    }
+
+      .video-center {
+    display: block;       
+    margin: -100px auto -40px auto;  
+    width: 80%;        
+  }
+
+  #slideshow{
+    width: 70%;
+    margin: -70px auto 0px auto!important;
+}
+
+    .copy-contain {
+        padding: 20px 20px 40px 20px!important;
+        background-color: #17181c;
+        border-radius: 5px;
+        background-image: none !important;
+        margin: -55px auto 100px auto;
+    }
+
+    .copy-txt p {
+        font-family: proxima-nova-extra-wide;
+            overflow: hidden;
+    }
+
+    .specs-header{
+        color: transparent;
+        font-family: 'Sora', sans-serif !important;
+        font-size: 30px !important;
+        font-weight: 800;
+        line-height: 1.2em !important;
+        letter-spacing: -0.01em;
+        padding-top: 15px !important;
+        padding-bottom: 15px;
+        text-transform: none !important;
+        background: linear-gradient(90deg, #ffc767, #e3aa3e 50%, #ffd98a);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+
+    @media only screen and (max-width: 768px) {
+        .go300628013{
+            padding: 10px!important;
+        }
+
+        .modal-body{
+            padding: 20px 0!important;
+        }
+          #slideshow{
+    width: 100%;
+    margin: -30px auto -30px auto!important;
+}
+
+        #slideshow-mobile{
+            width: 80%;
+            margin: -45px auto -40px auto!important;
+        }
+
+        .info-row-row{
+            padding-bottom:50px;
+                }
+
+          .video-center {
+      
+    margin: -50px auto -40px auto;  
+    width: 100%;
+          }
+        .red-acc{
+            font-size: 21px;
+        }
+    
+        .grey-box{
+            margin-top: 15px;
+        }
+
+        .info-row-row{
+            width: 100%; margin: 70px auto 0 auto;
+        }
+
+
+        .sold-out-text{
+            font-size: 30px!important;
+            margin-bottom: 10px;
+        }
+
+           /* Review Styles */
+            .jdgm-prev-badge{
+                margin-bottom: 20px;
+            }
+    
+            .product-review{
+                width: 100%;
+                max-width: 960px;
+                margin: 0 auto;
+            }
+    
+            .overview-txt{
+                width: 90%;
+                font-size: 15px;
+            }
+    
+            .glow-btn{
+                width: 90%;
+                margin: 0 auto;
+            }
+    
+            #judgeme_product_reviews{
+                margin-top:-30px;
+            }`
+           /* End Review Styles */
+
+        .page-logo-img {
+            width: 250px;
+        }
+        .dark-design h3 {
+            font-size: 18px;
+        }
+        .wistia-contain {
+            width: 100%;
+            min-height: 250px;
+            margin-top: 25px;
+            margin-bottom: -45px;
+        }
+        .btn-tickets {
+            width: 100%;
+            margin-top: 65px;
+        }
+        .section-header {
+            font-size: 24px;
+        }
+        .col-header {
+            font-size: 22px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .general-btn-margin {
+            margin-top: 0px;
+        }
+        .vip-btn-margin {
+            margin-top: 0px;
+        }
+        .pricing {
+            font-size: 20px;
+            letter-spacing: 0px;
+        }
+        .section-header-prize {
+            font-size: 28px;
+        }
+        .prize-header {
+            text-align: center !important;
+            white-space: normal;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .gift-card {
+            padding-right: 15px;
+        }
+        .pr-10 {
+            padding-right: 15px;
+        }
+        .pl-10 {
+            padding-left: 15px;
+        }
+        .prize-value {
+            text-align: center !important;
+        }
+        .prize-description p {
+            text-align: center !important;
+        }
+        .faq-subheader {
+            font-size: 18px;
+        }
+        .faq-accd {
+            width: 100%;
+        }
+        .faq-accd button {
+            white-space: normal;
+        }
+        .top-left1 {
+            display: none;
+        }
+        .mobile-cta {
+            font-family: proxima-nova-wide, sans-serif !important;
+            font-weight: 500 !important;
+            background-color: #E82021 !important;
+            color: #F5F5F5 !important;
+            border: none;
+            text-transform: none;
+            letter-spacing: 0px !important;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 18px !important;
+            border-radius: 5px !important;
+            padding: 6px 25px !important;
+            transition: transform 0.3s ease;
+        }
+        .event-copy-info {
+            width: 100%;
+        }
+        .dark-design h1 {
+            font-size: 26px !important;
+            letter-spacing: 0px;
+        }
+    }
+
+
+@keyframes textPink {
+    0% { 
+        text-shadow: 
+            0 0 0.2em #ffc767, 
+            0 0 0.4em #ffc767, 
+            0 0 0.6em #ffc767, 
+            0 0 0.8em #ffc767, 
+            0 0 1em   #ffc767; 
+    }
+    50% {
+        text-shadow: 
+            0 0 0.4em #ffc767, 
+            0 0 0.6em #ffc767, 
+            0 0 0.8em #ffc767, 
+            0 0 1em   #ffc767, 
+            0 0 1.2em #ffc767; 
+    }
+    100% { 
+        text-shadow: 
+            0 0 0.2em #ffc767, 
+            0 0 0.4em #ffc767, 
+            0 0 0.6em #ffc767, 
+            0 0 0.8em #ffc767, 
+            0 0 1em   #ffc767; 
+    }
+}
+
+
+    
+    .pink-text {
+        color: #ffc767;
+        {% comment %} text-decoration: none;
+        transition: text-shadow 0.5s ease, color 0.3s ease;
+        animation: textPink 10s linear infinite; {% endcomment %}
+    }
+
+    .glowText111{
+        color: #f5f5f5;
+        text-decoration: none;
+        transition: text-shadow 0.5s ease, color 0.3s ease;
+        animation: textPink 10s linear infinite; 
+    }
+
+    .bonus-value {
+        background: #f2f2f2;
+        color: #141414 !important;
+        border-radius: 2px;
+        z-index: 100;
+            position: absolute;
+    right: 15px;
+    top: 25px;
+    }
+
+</style>
+
+
+
+
+
+
+
+
+
+
+  <style>
+    .mystery-row {
+        max-width: 1100px;
+        margin: 40px auto 0 auto;
+    }
+
+    .specs-spacing {
+        margin-top: 40px;
+    }
+
+    .mystery-specs2.standard-edition {
+        display: flex;
+        flex-direction: column;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+
+    }
+
+    .first-card{
+        color: #f5f5f5;
+        font-size: 18px;
+        font-family: proxima-nova-extra-wide, sans-serif;
+        background-color: #535660;
+        padding: 15px 0;
+        border-top-right-radius: 5px!important;
+        border-top-left-radius: 5px!important;
+        letter-spacing: .5px;
+        font-weight: 600;
+    }
+
+    .gold-card{
+        font-weight: 700;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        background-color: #ffc767
+    }
+
+    .red-card{
+        font-family: proxima-nova-extra-wide, sans-serif;
+        background-color: #db3031;
+        padding: 5px 0;
+        margin-top: -37px;
+    }
+
+    .middle-card{
+        color: #f5f5f5;
+        background-color: #535660;
+    }
+
+    .pack-img-middle{
+        {% comment %} border-left: 2px solid #BDBEC6;
+        border-right: 2px solid #BDBEC6; {% endcomment %}
+    }
+
+    .mystery-specs2.golden-edition {
+        display: flex;
+        flex-direction: column;   
+        background: linear-gradient(to bottom, #1c1400, #1c1400);
+        border-left: 2px solid #ffc767;
+        border-right: 2px solid #ffc767;
+
+
+    }
+
+    .pack-img{
+        {% comment %} height: 280px; {% endcomment %}
+    }
+
+    .gold-box {
+        margin: 0 auto;
+        width: 80%;
+        padding: 80px 25px;
+    }
+
+    .standard-box{
+
+        margin: 0px auto;
+    }
+
+    .middle-box{
+        margin: 0 auto;
+    }
+
+    .pack-img-standard{
+        {% comment %} border-left: 2px solid #535660;
+        border-right: 2px solid #535660; {% endcomment %}
+
+    }
+
+    .pack-img-gold{
+        border-left: 2px solid #ffc767;
+        border-right: 2px solid #ffc767;
+    }
+
+    .mystery-specs2.middle-edition {
+        display: flex;
+        flex-direction: column;
+        {% comment %} border-left: 2px solidrgb(2, 3, 4);
+        border-right: 2px solid #BDBEC6;
+        border-bottom: 2px solid #BDBEC6; {% endcomment %}
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .mystery-specs2 {
+        color: #FFFFFF;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #17181C;
+        padding: 20px 30px 20px 30px;
+    }
+
+
+
+
+    .header-specs, .subheader-specs {
+        font-family: proxima-nova-extra-wide, sans-serif !important;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 1.2em;
+        text-align: left;
+        letter-spacing: .5px;
+    }
+
+    .fs-swap{
+        margin-left: -10px;
+    }
+
+    .fs-swap, .subheader-specs{
+        font-size: 18px;
+        margin-top: -15px;
+        font-weight: 500;
+
+    }
+    
+
+    .mystery-specs2 p {
+        color: #f5f5f5;
+        margin: 15px 0 0px 0;;
+        font-family: proxima-nova-wide, sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .apex-list, .apex-list-gold{
+        columns: 1;
+        list-style: none;
+        text-align: left;
+        font-family: proxima-nova-wide, sans-serif;
+        font-size: 13px;
+        font-weight: 100;
+        margin-top: 3px;
+    }
+
+    .apex-list li{
+        opacity: .6;
+    }
+
+    .apex-list li:before{
+        content: "✓";
+        padding-right: 5px;
+        color: #f5f5f5;
+        font-weight: 700;
+    }
+
+    .list2 li:before{
+        content: "✓";
+        padding-right: 5px;
+        color: #ffc767!important;
+        font-weight: 700;
+        opacity: 1!important;
+    }
+
+    .list2{
+        color: #ffc767!important;
+    }
+
+    .list2 li{ 
+        opacity: 1!important;
+    }
+
+    .standard-btn{
+        background: none!important;
+        background-color: #535660!important;
+        color: #f5f5f5!important;
+        font-family: proxima-nova-extra-wide, sans-serif!important;
+        border-radius: 5px!important;
+        margin: 591px 10px 9px 0;
+        border: none!important;
+        padding: 10px 0 13px 0;
+        font-size: 20px;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4); 
+        transition: .3s;
+    }
+
+    .middle-btn{
+        background: none!important;
+        background-color: #535660!important;
+        color: #f5f5f5!important;
+        font-family: proxima-nova-extra-wide, sans-serif!important;
+        border-radius: 5px!important;
+        margin: 289px 10px 9px 0;
+        border: none!important;
+        padding: 10px 0 13px 0;
+        font-size: 20px;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4); 
+        transition: .3s;
+    }
+
+    .middle-btn2{
+        margin: 145px 10px 9px 0;
+    }
+
+
+
+    .golden-btn{
+        background: linear-gradient(to right, #b8842e, #9c6f22);
+        font-family: proxima-nova-extra-wide, sans-serif!important;
+        border-radius: 5px!important;
+        border: none!important;
+        padding: 14px 0 16px 0;
+        color: #f5f5f5;
+        margin: 0px 10px 9px 0;
+        font-size: 20px;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4); 
+        transition: .3s;
+    }
+
+    .golden-btn:hover{
+        transform: scale(1.05);
+
+    }
+
+    .smaller-text{
+        font-size: 13px;
+        font-weight: 100!important;
+        opacity: .6!important;
+    }
+
+    .standard-btn:hover{
+        opacity: .8;
+        cursor: pointer;
+        transition: .3s;
+        transform: scale(1.05);
+    }
+
+    .middle-btn:hover{
+        opacity: .8;
+        transform: scale(1.05);
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .pp-button{
+        margin-top: 25px;
+    }
+
+    .apex-row{
+        border: 2px solid #ffd98a;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+
+    .row-img{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .apex-row h5{
+        font-size: 14px;
+        text-align: left;
+        font-family: proxima-nova-wide, sans-serif;
+        color: #ffd98a;
+        margin: 10px 0 -15px 0;
+    }
+
+    .small-list{
+        list-style: none;
+        text-align: left;
+        font-family: proxima-nova-wide, sans-serif;
+        font-size: 13px;
+        font-weight: 100;
+        margin-top: 3px;
+    }
+
+
+    .small-list li:before{
+        content: "✓";
+        padding-right: 5px;
+        color: #ffd98a;
+    }
+    
+    .special-specs{
+        background-color: #ffc767;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .strikeout{
+        color: #E73B3C;
+        text-decoration: line-through;
+    }
+
+    .saving{
+        font-family: proxima-nova-extra-wide, sans-serif;
+        font-weight: 500;
+        color: #f5f5f5;
+        margin: 0px 0 -7px 0;
+        font-size: 14px;
+        opacity: .7;
+    }
+
+    .plugin-only{
+        background-color: #17181c;
+        padding: 20px 30px;
+    }
+
+    .diablo-only{
+        width: 80%;
+        display: block;
+        padding: 80px 25px;
+        margin: 0 auto;
+    }
+
+    li .price {
+      float: right;
+      color: #F5F5F5 !important;
+      font-family: 'proxima-nova-wide' !important;
+  }
+
+
+
+    .header-specs{
+        text-align: left;
+        margin-top: 10px;
+        font-size: 60px;
+    }
+
+    .header-specs-2{
+        font-size: 22px;
+        font-weight: 500;
+        font-family: 'proxima-nova-wide' !important;
+        
+        text-align: left!important;
+        margin-top: -7px!important;
+    }
+
+    .middle-img{
+        width: 90%;
+        display: block;
+        margin: 0px auto;
+        padding: 46px 0;
+0
+    }
+
+    .middle-column{
+        background: linear-gradient(to bottom, rgba(255, 21, 0, 0.2), rgba(23, 24, 28, 0.4) );
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 20px;
+        padding-bottom: 175px;
+    }
+
+
+    .total-values{
+        font-size: 25px;
+        font-weight: 700;
+        list-style: none!important;
+        opacity: 1!important;
+    }
+
+
+    .total-values:before{
+        content: none!important;
+    }
+
+    .pp-btn{
+        background: none!important;
+        background-color: #535660!important;
+        color: #f5f5f5!important;
+        font-family: proxima-nova-extra-wide, sans-serif!important;
+        border-radius: 5px!important;
+        margin: 10px 0px 0px 0px;
+        border: none!important;
+        padding: 10px 0 13px 0;
+        font-size: 20px;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4); 
+        transition: .3s;
+        display: block;
+        width: 97%;
+    }
+
+
+    .mid-header{
+        font-size: 20px;
+        text-align: left;
+        font-weight: 300;
+        margin: 40px 0 15px 0;
+    }
+
+    .mid-header1{
+        margin-top: 112px;
+    }
+
+    .timer-boxbox{
+        padding: 10px 0;
+        background: linear-gradient(to bottom, rgba(197, 120, 43, 0.2), rgba(23, 24, 28, 0.4));
+        border: 2px solid #ffc767;
+        border-radius: 5px;
+        width: 600px;
+        margin: 40px auto 0 auto;
+        padding: 0;
+        padding-bottom: 12px;
+    }
+
+    .iframe-header{
+        color: #f5f5f5;
+        font-family: proxima-nova-extra-wide, sans-serif!important;
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+
+
+    
+.timer-label{
+font-size: 14px!important;
+font-weight: 300;
+}
+
+#countdown-timer-hours, #countdown-timer-minutes, #countdown-timer-seconds, #second-countdown-timer-hours, #second-countdown-timer-minutes, #second-countdown-timer-seconds {
+color:#ffc767!important;
+font-family: proxima-nova-extra-wide, sans-serif!important;
+font-size: 30px;
+margin-top: -3px;
+font-weight: 300!important;
+}
+
+.markdown{
+background-color: #E73B3C;
+font-family: proxima-nova-extra-wide, sans-serif!important;
+font-weight: 300!important;
+color: #f5f5f5;
+font-size: 13px;
+margin-left: 37%;
+padding: 1px 5px 2px 5px;
+border-radius: 3px;
+}
+
+.pricing-header {
+  margin-top: -60px;
+  font-size: 38px;
+}
+/* Pricing Compare */
+.gray-border {
+  border: 1px solid #3D3F48;
+}
+.pricing-box {
+  font-family: proxima-nova-wide, sans-serif;
+  font-weight: 900;
+  border-radius: 5px;
+  position: relative;
+  background-color: #111215;
+  color: #F2F2F2;
+}
+.color-banner, .color-banner-2 {
+text-align: center;
+height: 56px;
+padding: 12px 0 0 0;
+font-family: proxima-nova-wide, sans-serif;
+font-weight: 600;
+font-size: 20px;
+}
+.color-banner {
+background-color: #3D3F48;
+border-top-right-radius: 0px;
+border-top-left-radius: 0px;
+color: #DBDCDE;
+}
+.pricing-container {
+
+}
+.price-box {
+text-align: center;
+padding-top: 5px;
+}
+.price-actual-2 {
+color: #F2F2F2;
+font-size: 40px;
+padding-left: 5px;
+}
+.no-glow-btn {
+background: linear-gradient(166deg, #3D3F48 30%, #3D3F48 80%);
+color: #DBDCDE !important;
+box-shadow: 0 .125rem .25rem #00000013 !important;
+padding: 15px 0px 15px 0px;
+font-size: 20px !important;
+letter-spacing: 0.5px !important;
+font-weight: 700!important;
+border-radius: 5px;
+display: block;
+text-align: center;
+transition: transform 0.3s ease;
+margin-top: 60px;
+}
+.no-glow-btn:hover {
+transform: scale(1.05);
+text-decoration: none;
+cursor: pointer;
+}
+.pricing-list {
+margin-top: -4px;
+color: #F5F5F5;
+text-indent: -0.8em;
+margin-left: 8%;
+font-family: proxima-nova-wide;
+font-weight: 300;
+opacity: .7;
+font-weight: 300;
+font-size: 17px;
+text-align: left;
+}
+.pricing-container .glow-btn {
+width: -webkit-fill-available;
+text-align: center;
+}
+.color-banner-2 {
+background-image: linear-gradient(to right, hsl(5 100% 50% / 1), hsl(15 100% 58% / 1));
+color: #F5F5F5;
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+}
+.good-container {
+border-right: 1px solid #e3aa3e;
+border-left: 1px solid #e3aa3e;
+border-bottom: 1px solid #e3aa3e;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+.fa-check {
+padding-right: 10px;
+}
+.pricing-list .fa-clock {
+padding-right: 10px;
+}
+.accent-color {
+color: #e3aa3e;
+font-weight: 700;
+}
+.price-actual {
+color: #F2F2F2;
+font-size: 42px;
+}
+.price-info {
+color: #F2F2F2;
+opacity: 0.8;
+}
+.pricing-row {
+margin-top: 40px;
+}
+
+
+
+    .plugin-img, .gold-box{
+        transform: rotate(-15deg);
+    }
+
+    .form-control{
+        height: 47px !important;
+        padding: 0 !important;
+        font-size: 18px !important;
+        text-align: center !important;
+        padding-left: 11% !important;
+    }
+
+
+    .btn-stand, .btn-general{
+        border-radius: 5px!important;
+        font-family: proxima-nova-extra-wide!important;
+        border: none!important;
+        text-transform: none!important;
+        transition: .3s!important;
+    }
+
+    .btn-stand{
+        color: #101010!important;
+        background-color: #bdbec6!important;
+    }
+
+    .btn-general{
+        color: #f5f5f5!important;
+        background-color: #ffc767!important;
+
+        
+    }
+    .qty-txt{
+        color: #f5f5f5!important;
+        font-family: proxima-nova-wide!important;
+        font-size: 24px;
+        text-align: left;
+        font-weight: 400;
+        
+    }
+
+    .fcstand{
+        background-color: #38393e!important;
+        color: #f5f5f5!important;
+        border: none!important;
+    }
+
+    .fcvip{
+        
+        color: #f5f5f5!important;
+        border: none!important;
+        background-color: #2e2200!important;
+    }
+
+
+
+    @media only screen and (max-width: 768px) {
+        .difficult-header{
+            margin-top: 90px;
+        }
+        .page-logo-img{
+            width: 75px;
+            margin-top: 20px;
+            margin-bottom: -10px;
+        }
+
+        .qty-txt{
+            margin-top: 15px;
+        }
+
+        .form-control{
+ 
+        }
+
+        .those-headers{
+          margin-top: 35px;
+        }
+        .standard-btn{
+            margin: 20px 10px -20px 0px;
+        }
+
+        .middle-btn{
+            margin: 20px 10px -20px 0px;
+        }
+
+        .mystery-col{
+            margin-bottom: 20px;
+        }
+        .header-specs{
+          margin-bottom: 25px;
+          font-size: 52px;
+        }
+
+      .pp-btn, .middle-column .glow-btn{
+        font-size: 18px!important;
+      }
+      .mid-header1{
+
+        margin-top: -5px;
+      }
+
+      .middle-column{
+        padding-bottom: 0px;
+      }
+
+      .pricing-container{
+        padding-bottom: 0px;
+      }
+      .plugin-only{
+        padding-bottom: 30px;
+      }
+
+      .red-card{
+        margin-top: 30px;
+      }
+
+      .mid-header{
+        margin-top: 25px;
+      }
+
+      .markdown{
+
+        display: none!important;
+      }
+      .timer-boxbox{
+        width: 100%;
+      }
+
+      .pricing-list{
+        font-size: 15px!important;
+    }
+
+    .general-btn-margin{
+        margin-bottom: 20px;
+    }
+    }   
+
+
+
+.column-footer-stand, .column-footer-vip{
+    text-align: center!important;
+    font-family: proxima-nova-extra-wide!important;
+    font-size: 20px!important;
+    padding: 15px 0;
+    color: #f5f5f5;
+    font-weight: 300!important;
+}
+
+.column-footer-vip{
+    background-color: #2e2200 !important;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: 2px solid #ffc767;
+    border-right: 2px solid #ffc767;
+    border-bottom: 2px solid #ffc767;
+}
+
+.column-footer-stand{
+    background-color: #38393e!important;
+}
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+    .modal-content {
+        background-color: #17181C;
+        border-radius: 10px;
+    }
+
+    .modal-content h6{
+        color: #f5f5f5;
+        text-align: center;
+        font-family: proxima-nova-wide, sans-serif !important;
+        text-transform: none !important;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 1.2em;
+        margin: 5px 0 0px 0;
+    }
+
+    .modal-content h5{
+        color: #ffc767;
+        text-align: center;
+        font-family: proxima-nova-wide, sans-serif !important;
+        text-transform: none !important;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 1.2em;
+        margin: 25px 0 0px 0;
+    }
+
+    .modal-content h4{
+        color: #E82221!important;
+        text-align: center;
+        font-family: proxima-nova-wide, sans-serif !important;
+        text-transform: none !important;
+        line-height: 1.2em;
+        font-weight: 500;
+        font-size: 18px!important;
+        margin: 5px 0 15px 0;
+    }
+
+    #variant-select{
+        border-radius: 5px;   
+        font-family: proxima-nova-wide, sans-serif !important; 
+        font-weight: 600;
+        height: 54.5px;
+        background-color: #17181C;
+        border: 2px solid #f5f5f5;
+        color: #f5f5f5;
+    } 
+
+
+    .shirt-img{
+        display: block;
+        margin: 10px auto 20px auto;
+        width: 75%;
+    }
+
+    .no-thanks-popup{
+        display: block;
+        color: #f5f5f5!important;
+        opacity: .9;
+        text-align: center;
+        font-family: proxima-nova-wide, sans-serif !important;
+        text-transform: none ;
+        font-weight: 500;
+        font-size: 20px;
+        margin: 15px 0 15px 0 ;
+        cursor: pointer;
+        text-decoration: underline!important;
+    }
+
+    .shirt-button{
+        color: #17181C;
+        background-color: #ffc767;
+        font-family: proxima-nova-wide, sans-serif !important;
+        font-weight: 900!important;
+        font-size: 18px!important;
+        padding: 14.5px 30px!important;
+        border-radius: 5px!important;
+        border: 0px!important;
+    }
+    select {
+        appearance: none!important;
+        -webkit-appearance: none!important; /* Chrome, Safari */
+        -moz-appearance: none!important; /* Firefox */
+        background-image: none!important; /* Removes any default background/arrow */
+
+    }
+
+
+
+    .arrow-down {
+        position: absolute;
+        left: 31%;
+        bottom: 89px;
+        color: #f5f5f5; /* Custom arrow color */
+        pointer-events: none;
+        font-size: 10px;
+
+    }
+
+
+    /* Review Styles */
+    .review-section{
+        background-color: #1C1D21;
+        padding: 105px 0 60px 0;
+        margin-top: 0px;
+    }
+
+    .review-header{
+        font-family: proxima-nova-wide, sans-serif !important;
+        color: #f5f5f5;
+        font-size: 28px !important;
+        font-weight: 600;
+        letter-spacing: 0px;
+        margin-bottom: -10px;
+        line-height: 1.1em;
+    }
+
+    .product-review{
+        width: 70%;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .jdgm-rev__prod-link{
+        pointer-events: none;
+        color: #f5f5f5!important;
+    }
+
+    .jdgm-write-rev-link, .jdgm-ask-question-btn{
+        color: white!important;
+        font-family: cfm-semibold, sans-serif;
+    }
+
+    .jdgm-ask-question-btn, .jdgm-histogram, .jdgm-qa-badge, .jdgm-form-wrapper p, .jdgm-sort-dropdown, .jdgm-rev-widg__sort-wrapper, .jdgm-rev__votes {
+        display: none!important;
+    }
+
+    .jdgm-submit-rev{
+        color: white!important;
+        background: rgba(178,178,178,.6)!important;
+    }
+
+    .jdgm-rev-widg{
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+    }
+
+    .jdgm-prev-badge{
+        margin-top: 8px;
+    }
+
+    .jdgm-prev-badge__text {
+        font-size: 12px;
+    }
+
+    .diablo-img{
+        width: 70%;
+        float: right;
+    }
+
+    /* End Review Styles */   
+
+    .copy-sub{
+        color: #ffc767;
+    }
+    @media only screen and (max-width: 768px) {
+        .modal-content h4{
+            font-size: 18px!important;
+        }
+
+        .modal-content h6{
+            font-size: 21px;
+        }
+    
+        .modal-content h5{
+            font-size: 21px;
+            margin: 25px 0 0px 0;
+        }
+
+        .arrow-down {
+            left: 25%;    
+        }
+      .product-review{
+        width: 100%;
+      }
+
+            .copy-contain{
+            margin: -5px auto 100px auto!important;
+        }
+
+        .specs-header{
+            font-size: 22px!important;
+        }
+    }
+</style>
+
+{% comment %}===========================================================
+  STYLE OVERRIDE — match the actual-homepage.liquid aesthetic.
+  Keeps every existing element & ID intact; just retargets typography,
+  color, and surface treatment to the homepage's Sora + purple/cyan
+  language. Source order makes these rules win the cascade.
+  To roll back: delete this block.
+==========================================================={% endcomment %}
+<style>
+    /* === Neutralize the legacy keyframe animations so the buttons /
+       gradient text never paint a frame of gold / teal / magenta on
+       page load. Keyframes are global — the LAST definition in the
+       document wins, so re-declaring them here flattens the animation
+       to the new purple palette regardless of where they're referenced
+       above. Must stay BEFORE my overrides on .btn-glow / .goldgoldgold
+       so cascade order doesn't matter for these. === */
+    @keyframes backgroundGlow {
+        0%, 50%, 100% {
+            -webkit-box-shadow: 0 8px 28px rgba(227, 170, 62, 0.55);
+            box-shadow: 0 8px 28px rgba(227, 170, 62, 0.55);
+            background-color: #e3aa3e;
+            border-color: #e3aa3e;
+        }
+    }
+    @keyframes backgroundGlow33 {
+        0%, 50%, 100% {
+            -webkit-box-shadow: 0 8px 28px rgba(227, 170, 62, 0.55);
+            box-shadow: 0 8px 28px rgba(227, 170, 62, 0.55);
+            background-color: #e3aa3e;
+            border-color: #e3aa3e;
+        }
+    }
+    @keyframes textAnimate {
+        0%, 100% { text-shadow: none; }
+    }
+
+    /* === Sora font (mirroring actual-homepage.liquid) === */
+    @font-face {
+        font-family: 'Sora';
+        src: url('https://cdn.shopify.com/s/files/1/0129/7698/0032/files/Sora-Regular.ttf?v=1776962416') format('truetype');
+        font-weight: 400; font-style: normal; font-display: swap;
+    }
+    @font-face {
+        font-family: 'Sora';
+        src: url('https://cdn.shopify.com/s/files/1/0129/7698/0032/files/Sora-Bold.ttf?v=1776962416') format('truetype');
+        font-weight: 700; font-style: normal; font-display: swap;
+    }
+    @font-face {
+        font-family: 'Sora';
+        src: url('https://cdn.shopify.com/s/files/1/0129/7698/0032/files/Sora-ExtraBold_fab0baa8-11ad-41cb-8115-1a26bbea697b.ttf?v=1776962416') format('truetype');
+        font-weight: 800; font-style: normal; font-display: swap;
+    }
+
+    /* === Page base === */
+    html, body,
+    .page-container, .product-section, .dark-bg, .dark-bg1,
+    .main-content {
+        background-color: #08080e !important;
+        background-image: none !important;
+    }
+
+    /* ============================================================
+       FLOATING RSVP NAV (scroll-reveal)
+    ============================================================ */
+    .nv-nav {
+        position: fixed;
+        top: 14px;
+        right: 0;
+        left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 28px;
+        padding: 0 24px;
+        z-index: 9999;
+        pointer-events: none;
+        opacity: 0;
+        transform: translateY(-12px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .nv-nav.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .nv-nav > * { pointer-events: auto; }
+    .nv-nav:not(.is-visible) > * { pointer-events: none; }
+    .nv-nav-btn {
+        display: inline-block;
+        background: linear-gradient(180deg, #e3aa3e 0%, #e3aa3e 100%) !important;
+        color: #ffffff !important;
+        font-family: 'Sora', sans-serif !important;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        text-decoration: none !important;
+        padding: 12px 26px;
+        border-radius: 999px;
+        border: none;
+        box-shadow: 0 4px 18px rgba(227, 170, 62, 0.5);
+        transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+        cursor: pointer;
+        animation: none !important;
+    }
+    .nv-nav-btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 6px 22px rgba(227, 170, 62, 0.65);
+        filter: brightness(1.05);
+        text-decoration: none !important;
+        color: #ffffff !important;
+    }
+
+    @media (max-width: 768px) {
+        .nv-nav {
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 18px;
+            gap: 16px;
+            justify-content: center;
+            background: rgba(6, 7, 12, 0.95);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .nv-nav.is-visible { pointer-events: auto; }
+        .nv-nav-btn { font-size: 12px; padding: 10px 22px; }
+    }
+
+    /* Force Sora across the live content + modal */
+    .product-section, .product-section *,
+    #dlModal, #dlModal * {
+        font-family: 'Sora', sans-serif !important;
+    }
+
+    /* === Logo === */
+    .product-section .logo { padding-top: 0px !important; margin-top: -14px !important; }
+    .product-section .logo img {
+        width: 90px !important;
+        max-width: 40% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        display: inline-block !important;
+    }
+
+    /* === Main headline (h1.h1-overview / .insta-header) ===
+       Sized + max-width tuned so the long Mirage hero copy
+       ("Get an Exclusive Collection of Premium / Vocal Loops,
+       Chops, Acapellas & more for FREE!") renders as exactly
+       two lines on desktop, with the <br> after "Premium". */
+    h1.h1-overview {
+        font-family: 'Sora', sans-serif !important;
+        font-weight: 800 !important;
+        font-size: 38px !important;
+        line-height: 1.15 !important;
+        letter-spacing: -0.02em !important;
+        color: #ffffff !important;
+        text-transform: none !important;
+        text-align: center !important;
+        max-width: 1320px !important;
+        margin: 30px auto 18px auto !important;
+        padding: 0 24px !important;
+        text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5) !important;
+    }
+    h1.h1-overview .insta-header {
+        font-family: 'Sora', sans-serif !important;
+        font-weight: 800 !important;
+        color: #ffffff !important;
+        text-transform: none !important;
+    }
+
+    /* Subhead under the main page headline */
+    .nv-page-sub {
+        font-family: 'Sora', sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        line-height: 1.2em !important;
+        color: rgba(255, 255, 255, 0.78) !important;
+        text-align: center !important;
+        max-width: 760px !important;
+        margin: -48px auto 100px auto !important;
+        padding: 0 24px !important;
+    }
+
+    /* "goldgoldgold" accent → purple/cyan gradient text (kills the gold animation) */
+    .goldgoldgold {
+        background: linear-gradient(90deg, #ffc767, #e3aa3e 50%, #ffd98a) !important;
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        color: transparent !important;
+        text-shadow: none !important;
+        animation: none !important;
+        text-decoration: none !important;
+        font-weight: 800 !important;
+    }
+
+    /* === Plugin image — soft purple drop-shadow (transparent PNG-friendly) === */
+    .omega-pack { margin-top: 40px !important; margin-bottom: 30px !important; }
+    .omega-pack img {
+        max-width: 1090px !important;
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        filter: drop-shadow(0 30px 60px rgba(227, 170, 62, 0.35)) !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+    @media (min-width: 768px) {
+        .omega-pack img { max-width: 790px !important; }
+    }
+
+    /* === CTA button (.btn-glow) — homepage purple pill === */
+    #payment .btn-glow,
+    a.btn-glow {
+        display: inline-block !important;
+        font-family: 'Sora', sans-serif !important;
+        font-weight: 700 !important;
+        font-size: 18px !important;
+        letter-spacing: 0.06em !important;
+        text-transform: uppercase !important;
+        color: #ffffff !important;
+        background: linear-gradient(180deg, #e3aa3e 0%, #e3aa3e 100%) !important;
+        background-color: #e3aa3e !important;
+        padding: 18px 56px !important;
+        border-radius: 999px !important;
+        border: none !important;
+        box-shadow: 0 8px 28px rgba(227, 170, 62, 0.55) !important;
+        cursor: pointer !important;
+        text-decoration: none !important;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease !important;
+        animation: none !important;
+        width: auto !important;
+        margin-bottom: 15px !important;
+    }
+    #payment .btn-glow:hover,
+    a.btn-glow:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 12px 36px rgba(227, 170, 62, 0.7) !important;
+        filter: brightness(1.06) !important;
+        color: #ffffff !important;
+        text-decoration: none !important;
+    }
+
+    /* === Date / Time / Location cards (.grey-box → glassy purple cards) === */
+    /* Equalize the gap above and below the info-row by zeroing out
+       the button row's extra bottom-margin (Bootstrap mb-3 + inline 15px)
+       and the copy block's any top margin. */
+    #payment { margin-bottom: 0 !important; }
+    #payment .cta,
+    #payment .row .cta { margin-bottom: 0 !important; }
+    #payment .btn-glow,
+    a.btn-glow { margin-bottom: 0 !important; }
+    .info-row-row {
+        width: 100% !important;
+        max-width: 1100px !important;
+        margin: -45px auto 35px auto !important;
+        padding: 0 24px !important;
+    }
+    .info-row-row .grey-box {
+        background: linear-gradient(160deg, rgba(255, 199, 103, 0.07) 0%, rgba(255, 199, 103, 0.03) 100%) !important;
+        background-color: transparent !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        border-radius: 16px !important;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        padding: 26px 22px !important;
+        margin-top: 0 !important;
+        text-align: center !important;
+        transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+    .info-row-row .grey-box:hover {
+        transform: translateY(-3px);
+        border-color: rgba(255, 199, 103, 0.35) !important;
+    }
+    .info-row-row .event-info1 p {
+        color: rgba(255, 255, 255, 0.95) !important;
+        font-family: 'Sora', sans-serif !important;
+        font-weight: 700 !important;
+        font-size: 27px !important;
+        line-height: 1.45 !important;
+        margin: 0 !important;
+        text-align: center !important;
+    }
+    .info-row-row .red-accent {
+        display: block !important;
+        color: rgba(255, 255, 255, 0.55) !important;
+        font-family: 'Sora', sans-serif !important;
+        font-weight: 700 !important;
+        font-size: 16px !important;
+        letter-spacing: 0.2em !important;
+        text-transform: uppercase !important;
+        margin-bottom: 6px !important;
+        opacity: 1 !important;
+    }
+    /* Kill the empty-line gap from the <br> after the label */
+    .info-row-row .red-accent + br { display: none !important; }
+
+    /* === Bottom copy section (specs-header + copy-txt → glass card) === */
+    .main-ps-copy {
+        max-width: 920px !important;
+        margin: 110px auto 30px auto !important;
+        padding: 0 24px !important;
+        width: 100% !important;
+    }
+    .main-ps-copy .copy-contain {
+        background: linear-gradient(160deg, rgba(255, 199, 103, 0.07) 0%, rgba(255, 199, 103, 0.03) 100%) !important;
+        background-color: transparent !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        border-radius: 24px !important;
+        backdrop-filter: blur(8px) !important;
+        -webkit-backdrop-filter: blur(8px) !important;
+        padding: 44px 48px !important;
+        background-image: none !important;
+    }
+    .main-ps-copy .copy-scroll {
+        overflow: visible !important;
+        overflow-x: visible !important;
+        padding: 0 !important;
+        height: auto !important;
+        background-color: transparent !important;
+        margin-top: 0 !important;
+    }
+    h1.specs-header,
+    h1.specs-header .bold-txt {
+        font-family: 'Sora', sans-serif !important;
+        font-weight: 800 !important;
+        font-size: 30px !important;
+        line-height: 1.2 !important;
+        letter-spacing: -0.01em !important;
+        text-transform: none !important;
+        text-align: center !important;
+        margin: 0 0 24px 0 !important;
+        background: linear-gradient(90deg, #ffc767, #e3aa3e 50%, #ffd98a) !important;
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        color: transparent !important;
+        padding: 0 !important;
+    }
+    .main-ps-copy .copy-txt {
+        opacity: 1 !important;
+        margin-top: 0 !important;
+    }
+    .main-ps-copy .copy-txt p {
+        font-family: 'Sora', sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        line-height: 1.65 !important;
+        color: rgba(255, 255, 255, 0.78) !important;
+        margin-bottom: 14px !important;
+        opacity: 1 !important;
+    }
+    .main-ps-copy .copy-txt p:last-child { margin-bottom: 0 !important; }
+
+    /* === Klaviyo modal === */
+    #dlModal .modal-dialog { max-width: 480px; }
+    #dlModal .modal-content {
+        background: #1C1D21 !important;
+        background-color: #1C1D21 !important;
+        background-image: none !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        border-radius: 18px !important;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7) !important;
+        overflow: hidden !important;
+        position: relative;
+    }
+    /* Disable the radial bloom — it bleeds through the Klaviyo form fields */
+    #dlModal .modal-content::before { display: none !important; content: none !important; }
+    #dlModal .modal-body {
+        padding: 36px 28px !important;
+        position: relative;
+        z-index: 1;
+    }
+    /* Klaviyo submit button → minimal: gradient background + glow only.
+       Keep all other Klaviyo defaults (font, casing, padding, radius,
+       text color). Scoped to [type="submit"] so the phone-number
+       country-flag button is unaffected. */
+    #dlModal .klaviyo-form-{{ page_klaviyo_id }} button[type="submit"],
+    #dlModal ._submit,
+    .klaviyo-form-{{ page_klaviyo_id }} button[type="submit"] {
+        background: linear-gradient(180deg, #e3aa3e 0%, #e3aa3e 100%) !important;
+        background-image: linear-gradient(180deg, #e3aa3e 0%, #e3aa3e 100%) !important;
+        background-color: #e3aa3e !important;
+        box-shadow: 0 8px 28px rgba(227, 170, 62, 0.55) !important;
+        animation: none !important;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease !important;
+    }
+    #dlModal .klaviyo-form-{{ page_klaviyo_id }} button[type="submit"]:hover,
+    .klaviyo-form-{{ page_klaviyo_id }} button[type="submit"]:hover {
+        transform: translateY(-1px) !important;
+        box-shadow: 0 12px 36px rgba(227, 170, 62, 0.7) !important;
+        filter: brightness(1.06) !important;
+    }
+
+    /* === Mobile === */
+    @media only screen and (max-width: 768px) {
+        .product-section .logo img { width: 100px !important; }
+
+        h1.h1-overview { font-size: 26px !important; padding: 15px 16px !important; margin: 18px auto 14px auto !important; }
+        .nv-page-sub {
+            font-size: 14px !important;
+            line-height: 1.55 !important;
+            margin: 18px auto 50px auto !important;
+        }
+        .omega-pack img { width: 92% !important; }
+        #slideshow { margin: -30px auto -30px auto !important; }
+
+        #payment .btn-glow,
+        a.btn-glow { font-size: 14px !important; padding: 14px 32px !important; width: 100% !important; max-width: 360px !important; }
+
+        .info-row-row { padding: 0 16px !important; margin: 24px auto 50px auto !important; }
+        .info-row-row .grey-box { padding: 20px 16px !important; margin-bottom: 12px !important; }
+        .info-row-row .event-info1 p { font-size: 19px !important; font-weight: 700 !important; color: rgba(255,255,255,0.95) !important; }
+        .info-row-row .red-accent { font-size: 14px !important; letter-spacing: 0.18em !important; }
+
+        .main-ps-copy { padding: 0 16px !important; margin: 60px auto 30px auto !important; }
+        .main-ps-copy .copy-contain { padding: 30px 22px !important; border-radius: 18px !important; }
+        h1.specs-header,
+        h1.specs-header .bold-txt { font-size: 22px !important; }
+        .main-ps-copy .copy-txt p { font-size: 14px !important; }
+
+        #dlModal .modal-body { padding: 28px 18px !important; }
+    }
+
+    /* ============================================================
+       ARTIST PROOF (testimonials)
+    ============================================================ */
+    .nv-proof {
+        position: relative;
+        padding: 50px 24px 100px 24px;
+        background: linear-gradient(180deg, #08080e 0%, #0a0913 50%, #08080e 100%);
+        overflow: hidden;
+    }
+    .nv-proof::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background:
+            radial-gradient(900px 500px at 30% 30%, rgba(255, 199, 103, 0.16), transparent 65%),
+            radial-gradient(900px 500px at 70% 70%, rgba(255, 199, 103, 0.10), transparent 65%);
+        z-index: 0;
+    }
+    .nv-proof > * { position: relative; z-index: 1; }
+
+    .nv-proof-header {
+        text-align: center;
+        max-width: 820px;
+        margin: 0 auto 50px auto;
+    }
+    .nv-proof-eyebrow {
+        font-family: 'Sora', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.55);
+        margin-bottom: 14px;
+    }
+    .nv-proof-title {
+        font-family: 'Sora', sans-serif !important;
+        font-weight: 800 !important;
+        font-size: 38px !important;
+        line-height: 1.15 !important;
+        letter-spacing: -0.015em !important;
+        color: #ffffff !important;
+        margin: 0 0 14px 0 !important;
+        text-transform: none !important;
+        text-align: center !important;
+    }
+    .nv-proof-grad {
+        background: linear-gradient(90deg, #ffc767, #e3aa3e 50%, #ffd98a) !important;
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        color: transparent !important;
+    }
+    .nv-proof-sub {
+        font-family: 'Sora', sans-serif;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.78);
+        line-height: 1.55;
+        margin: 0;
+    }
+
+    .nv-proof-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 22px;
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+    .nv-proof-cta {
+        text-align: center;
+        margin: 56px auto 0 auto;
+    }
+    .nv-proof-card {
+        background: linear-gradient(160deg, rgba(255, 199, 103, 0.07) 0%, rgba(255, 199, 103, 0.03) 100%);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 18px;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        padding: 14px 14px 14px 14px;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+    .nv-proof-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(255, 199, 103, 0.4);
+    }
+
+    .nv-proof-link {
+        display: block;
+        text-decoration: none !important;
+        color: inherit !important;
+    }
+    .nv-proof-img-wrap {
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+        margin-bottom: 16px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    }
+    .nv-proof-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .nv-proof-card:hover .nv-proof-img { transform: scale(1.06); }
+    .nv-proof-img-wrap::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, transparent 55%, rgba(8, 8, 14, 0.7) 100%);
+        pointer-events: none;
+        z-index: 1;
+    }
+    .nv-proof-play { display: none !important; }
+
+    .nv-proof-artist {
+        font-family: 'Sora', sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        color: #ffffff;
+        line-height: 1.2;
+        letter-spacing: -0.005em;
+        margin-bottom: 10px;
+    }
+    .nv-proof-meta {
+        font-family: 'Sora', sans-serif;
+        font-size: 12px;
+        line-height: 1.45;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 4px;
+    }
+    .nv-proof-meta:last-of-type { margin-bottom: 0; }
+    .nv-proof-meta-label {
+        font-weight: 700;
+        color: rgba(255, 199, 103, 0.95);
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        font-size: 10px;
+        margin-right: 4px;
+    }
+    .nv-proof-meta-value {
+        color: rgba(255, 255, 255, 0.92);
+        font-weight: 500;
+    }
+
+    /* === Vimeo modal — sized for 9:16 portrait clips so the video
+       fills the frame with no black bars on the sides === */
+    #youtubeModal { z-index: 10000; }
+    #youtubeModal .modal-dialog.nv-proof-modal-dialog {
+        max-width: 440px;
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #youtubeModal .nv-proof-modal-content {
+        background: transparent !important;
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    #youtubeModal .nv-proof-modal-body {
+        padding: 0 !important;
+        background: transparent !important;
+    }
+    #youtubeModal .nv-proof-close {
+        display: block;
+        margin: 0 0 12px auto;
+        background: transparent;
+        border: 0;
+        color: #ffffff;
+        font-size: 32px;
+        line-height: 1;
+        opacity: 0.85;
+        cursor: pointer;
+        padding: 4px 10px;
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    }
+    #youtubeModal .nv-proof-close:hover { opacity: 1; }
+    .nv-proof-video {
+        position: relative;
+        padding-bottom: 177.78%; /* 9:16 — portrait */
+        height: 0;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+        background: #000;
+    }
+    .nv-proof-video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    /* === Mobile / tablet for proof section === */
+    @media (max-width: 1100px) {
+        .nv-proof-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 700px) {
+        .nv-proof { padding: 60px 16px 80px 16px; }
+        .nv-proof-header { margin-bottom: 32px; }
+        .nv-proof-title { font-size: 26px !important; }
+        .nv-proof-sub { font-size: 14px; }
+        .nv-proof-grid { grid-template-columns: 1fr; max-width: 420px; gap: 14px; }
+        .nv-proof-card { padding: 12px 12px 18px 12px; }
+        .nv-proof-img-wrap { margin-bottom: 12px; }
+        .nv-proof-artist { font-size: 18px; }
+        .nv-proof-meta { font-size: 12px; }
+        .nv-proof-play { opacity: 1; width: 48px; height: 48px; font-size: 14px; transform: translate(-50%, -50%) scale(1); }
+    }
+
+    /* ============================================================
+       LISTEN — sample vs. placement waveform players
+    ============================================================ */
+    .nv-listen {
+        position: relative;
+        padding: 50px 24px 100px 24px;
+        background: linear-gradient(180deg, #08080e 0%, #0a0913 50%, #08080e 100%);
+        overflow: hidden;
+    }
+    .nv-listen::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background:
+            radial-gradient(900px 500px at 70% 30%, rgba(255, 199, 103, 0.16), transparent 65%),
+            radial-gradient(900px 500px at 30% 70%, rgba(255, 199, 103, 0.10), transparent 65%);
+        z-index: 0;
+    }
+    .nv-listen > * { position: relative; z-index: 1; }
+
+    .nv-listen-header {
+        text-align: center;
+        max-width: 820px;
+        margin: 0 auto 50px auto;
+    }
+    .nv-listen-eyebrow {
+        font-family: 'Sora', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.55);
+        margin-bottom: 14px;
+    }
+    .nv-listen-title {
+        font-family: 'Sora', sans-serif !important;
+        font-weight: 800 !important;
+        font-size: 38px !important;
+        line-height: 1.15 !important;
+        letter-spacing: -0.015em !important;
+        color: #ffffff !important;
+        margin: 0 0 14px 0 !important;
+        text-transform: none !important;
+        text-align: center !important;
+    }
+    .nv-listen-grad {
+        background: linear-gradient(90deg, #ffc767, #e3aa3e 50%, #ffd98a) !important;
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        color: transparent !important;
+    }
+    .nv-listen-sub {
+        font-family: 'Sora', sans-serif;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.78);
+        line-height: 1.55;
+        margin: 0;
+    }
+
+    .nv-listen-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+    .nv-listen-card {
+        background: linear-gradient(160deg, rgba(255, 199, 103, 0.07) 0%, rgba(255, 199, 103, 0.03) 100%);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 18px;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        padding: 22px 24px 24px 24px;
+        transition: border-color 0.3s ease;
+    }
+    .nv-listen-card:hover {
+        border-color: rgba(255, 199, 103, 0.22);
+    }
+
+    .nv-listen-head {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 18px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .nv-listen-photo {
+        width: 64px;
+        height: 64px;
+        border-radius: 14px;
+        object-fit: cover;
+        flex-shrink: 0;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+    .nv-listen-meta {
+        min-width: 0;
+        flex: 1;
+    }
+    .nv-listen-artist {
+        font-family: 'Sora', sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        color: #ffffff;
+        letter-spacing: -0.005em;
+        line-height: 1.2;
+    }
+    .nv-listen-song-name {
+        font-family: 'Sora', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.65);
+        margin-top: 4px;
+        line-height: 1.35;
+    }
+
+    .nv-listen-row { margin-top: 16px; }
+    .nv-listen-row:first-of-type { margin-top: 0; }
+
+    .nv-listen-label-row {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        margin-bottom: 8px;
+        flex-wrap: wrap;
+    }
+    .nv-listen-label {
+        font-family: 'Sora', sans-serif;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: rgba(255, 199, 103, 0.95);
+        flex-shrink: 0;
+    }
+    .nv-listen-detail {
+        font-family: 'Sora', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.35;
+    }
+
+    /* Hide the native audio element — only the canvas waveform is used */
+    .nv-listen audio { display: none !important; }
+
+    /* Override the imported .waveform / .demo-btn shell to match the page */
+    .nv-listen .waveform {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: 10px;
+        padding: 8px 12px;
+    }
+    .nv-listen .demo-btn-contain {
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+        background: linear-gradient(180deg, #e3aa3e 0%, #e3aa3e 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 4px 14px rgba(227, 170, 62, 0.5);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .nv-listen .demo-btn-contain:hover {
+        transform: scale(1.08);
+        box-shadow: 0 6px 18px rgba(227, 170, 62, 0.7);
+    }
+    .nv-listen .demo-btn {
+        color: #ffffff !important;
+        font-size: 13px !important;
+        line-height: 1 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        opacity: 1 !important;
+    }
+    .nv-listen .waveform-contain {
+        flex: 1;
+        min-width: 0;
+        display: block;
+    }
+    .nv-listen .waveform-canvas {
+        width: 100%;
+        height: 56px;
+        cursor: pointer;
+        display: block;
+    }
+
+    .nv-listen-cta {
+        text-align: center;
+        margin: -16px auto 70px auto;
+    }
+
+    /* === Listen mobile / narrow desktop === */
+    @media (max-width: 1024px) {
+        .nv-listen-grid { grid-template-columns: 1fr; max-width: 720px; }
+    }
+    @media (max-width: 700px) {
+        .nv-listen { padding: 60px 16px 80px 16px; }
+        .nv-listen-header { margin-bottom: 32px; }
+        .nv-listen-title { font-size: 26px !important; }
+        .nv-listen-sub { font-size: 14px; }
+        .nv-listen-card { padding: 18px 18px 20px 18px; }
+        .nv-listen-photo { width: 52px; height: 52px; border-radius: 12px; }
+        .nv-listen-artist { font-size: 17px; }
+        .nv-listen-song-name { font-size: 12px; }
+        .nv-listen-label { font-size: 9px; letter-spacing: 0.18em; }
+        .nv-listen-detail { font-size: 11px; }
+        .nv-listen .waveform { gap: 10px; padding: 6px 10px; }
+        .nv-listen .demo-btn-contain { width: 32px; height: 32px; }
+        .nv-listen .demo-btn { font-size: 11px !important; }
+        .nv-listen .waveform-canvas { height: 44px; }
+    }
+
+    /* ============================================================
+       MIRAGE — vocal-preview card variant
+       Single-waveform card replacing the legacy 2-player Drake/etc.
+       cards. Reuses .nv-listen-card shell for glass + spacing; .nv-vocal-*
+       classes only override the per-card head (no artist photo, just a
+       tag pill + track name + key/tempo detail).
+    ============================================================ */
+    .nv-vocals-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 18px !important;
+    }
+    .nv-vocal-card {
+        padding: 18px 18px 18px 18px;
+        display: flex;
+        flex-direction: column;
+    }
+    .nv-vocal-head {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        padding-bottom: 12px;
+        margin-bottom: 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .nv-vocal-tag {
+        display: inline-block;
+        font-family: 'Sora', sans-serif;
+        font-size: 9.5px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: rgba(255, 217, 138, 0.95);
+        padding: 4px 10px;
+        border: 1px solid rgba(255, 199, 103, 0.4);
+        border-radius: 999px;
+        background: linear-gradient(180deg, rgba(255, 199, 103, 0.18), rgba(227, 170, 62, 0.12));
+        margin-bottom: 4px;
+    }
+    .nv-vocal-name {
+        font-family: 'Sora', sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        color: #ffffff;
+        letter-spacing: -0.01em;
+        line-height: 1.2;
+    }
+    .nv-vocal-detail {
+        font-family: 'Sora', sans-serif;
+        font-size: 11.5px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.35;
+    }
+    /* Tighten the waveform player inside the narrower 4-col cards. */
+    .nv-vocal-card .waveform { padding: 6px 10px !important; gap: 10px !important; }
+    .nv-vocal-card .demo-btn-contain { width: 30px !important; height: 30px !important; }
+    .nv-vocal-card .demo-btn { font-size: 11px !important; }
+    .nv-vocal-card .waveform-canvas { height: 44px !important; }
+    .nv-vocal-card .nv-listen-row { margin-top: auto; }
+
+    @media (max-width: 1100px) {
+        .nv-vocals-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    }
+    @media (max-width: 700px) {
+        .nv-vocals-grid { grid-template-columns: 1fr !important; max-width: 480px; }
+        .nv-vocal-card { padding: 18px 18px 18px 18px; }
+        .nv-vocal-head { padding-bottom: 12px; margin-bottom: 14px; }
+        .nv-vocal-name { font-size: 19px; }
+        .nv-vocal-detail { font-size: 12px; }
+        .nv-vocal-tag { font-size: 9px; letter-spacing: 0.18em; padding: 4px 10px; }
+    }
+
+    /* ============================================================
+       FEATURE — Two-row product story section.
+       Ported from the Space Cadet plugin page (.custom-pb / .custom-pb1
+       split rows with .those-headers gradient headlines + .br-5
+       images). Restyled here in the Mirage purple/cyan palette.
+    ============================================================ */
+    .nv-feature {
+        position: relative;
+        padding: 50px 0 80px 0;
+        background: #08080e;
+    }
+    /* Safety: force visibility on the feature section's content regardless
+       of any global animation-library CSS (AOS, etc.) that may otherwise
+       leave [data-aos] elements at opacity:0. */
+    .nv-feature, .nv-feature * {
+        opacity: 1 !important;
+        transform: none !important;
+        visibility: visible !important;
+    }
+    .nv-feature .page-width,
+    .nv-feature-width {
+        max-width: 1240px !important;
+        margin: 0 auto !important;
+        padding: 0 24px !important;
+    }
+    .nv-feature .custom-pb,
+    .nv-feature .custom-pb1 {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        align-items: center !important;
+    }
+    .nv-feature .custom-pb { margin-bottom: 110px !important; }
+    .nv-feature .custom-pb1 { margin-top: 110px !important; }
+
+    .nv-feature .those-headers,
+    .nv-feature .those-headers .section-text {
+        font-family: 'Sora', sans-serif !important;
+        font-weight: 800 !important;
+        font-size: 34px !important;
+        line-height: 1.18 !important;
+        letter-spacing: -0.015em !important;
+        text-transform: none !important;
+        text-align: left !important;
+        margin: 0 0 18px 0 !important;
+        padding: 0 !important;
+        background: linear-gradient(90deg, #ffc767, #e3aa3e 50%, #ffd98a) !important;
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        color: transparent !important;
+        text-shadow: none !important;
+    }
+    .nv-feature .copy-content p {
+        font-family: 'Sora', sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 15.5px !important;
+        line-height: 1.65 !important;
+        color: rgba(255, 255, 255, 0.78) !important;
+        margin-bottom: 14px !important;
+        opacity: 1 !important;
+        text-shadow: none !important;
+    }
+    .nv-feature .copy-content p:last-child { margin-bottom: 0 !important; }
+
+    .nv-feature .br-5 {
+        display: block;
+        max-width: 100% !important;
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 18px !important;
+        filter: drop-shadow(0 30px 60px rgba(227, 170, 62, 0.28)) !important;
+        box-shadow: none !important;
+        border: none !important;
+        margin: 0 auto !important;
+    }
+    .nv-feature .section-2-pr { padding-right: 30px !important; }
+    .nv-feature .section-3-pl { padding-left: 30px !important; }
+
+    @media (max-width: 768px) {
+        .nv-feature { padding: 40px 0 60px 0; }
+        .nv-feature .page-width,
+        .nv-feature-width { padding: 0 16px !important; }
+        .nv-feature .custom-pb { margin-bottom: 90px !important; }
+        .nv-feature .custom-pb1 { margin-top: 90px !important; }
+        .nv-feature .section-2-pr { padding-right: 15px !important; margin-top: 24px !important; }
+        .nv-feature .section-3-pl { padding-left: 15px !important; margin-top: 24px !important; }
+        .nv-feature .those-headers,
+        .nv-feature .those-headers .section-text {
+            font-size: 24px !important;
+            text-align: center !important;
+        }
+        .nv-feature .copy-content p {
+            font-size: 14px !important;
+            text-align: center !important;
+        }
+        .nv-feature .br-5 { border-radius: 14px !important; }
+    }
+</style>
+
+<style>
+/* Waveform Styles */
+
+audio {
+    display: none;
+}
+
+.demo-btn {
+    cursor: pointer;
+    margin-right: 20px;
+    color: #f5f5f5 !important;
+    opacity: 1;
+    padding-top: 7px;
+}
+
+.waveform {
+    display: flex;
+    margin: 10px 0 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.waveform-canvas {
+    width: 100%;
+    cursor: pointer;
+}
+
+.demo-btn-contain {
+    margin-top: -5px;
+}
+
+/* End Waveform Styles */
+    /* 50-packs hero is a wide horizontal render (user 2026-10-18): fill the column instead of the 70% / 790px plugin-style cap */
+    @media (min-width: 768px) {
+        #review-order .omega-pack img, .omega-pack img { max-width: 1300px !important; width: 100% !important; }
+        #review-order .omega-pack { width: 100% !important; max-width: 1300px !important; margin-left: auto !important; margin-right: auto !important; }   /* the theme css caps this wrapper at 70% */
+        #slideshow { width: 100% !important; margin: -40px auto 0 auto !important; }
+    }
+    @media (max-width: 767px) { .omega-pack img { width: 100% !important; } #slideshow { margin: -20px auto -20px auto !important; } }
+    /* headline strikeout (user 2026-10-18): grey $1145 like the all-group optin */
+    .bf-header .insta-header del { color: rgba(255,255,255,0.45); text-decoration: line-through; }
+    /* hero max width (config hero_max, user 2026-10-19) */
+    @media (min-width: 768px) { #review-order .omega-pack, #review-order .omega-pack img, .omega-pack img { max-width: 700px !important; } }
+</style>
+
+
